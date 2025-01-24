@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/osboxes/Desktop/EsysForBeginners-git.zip" added="2025-01-24T22:12:54.797179Z" modified="2025-01-24T22:12:55.078675Z" visited="2025-01-24T22:12:54.797180Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo-desktop" exec="&apos;file-roller %U&apos;" modified="2025-01-24T22:12:54.797180Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2025-01-24T22:12:55.078674Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/Desktop/EsysForBeginners-git" added="2025-01-24T22:13:03.833248Z" modified="2025-01-24T22:37:27.607634Z" visited="2025-01-24T22:13:03.833248Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo-desktop" exec="&apos;nemo %U&apos;" modified="2025-01-24T22:37:27.607629Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/SUMMARY.md" added="2025-01-24T22:13:41.606597Z" modified="2025-01-24T22:27:07.190716Z" visited="2025-01-24T22:13:41.606597Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:27:07.190715Z" count="2"/>
+          <bookmark:application name="nemo" exec="&apos;xed %U&apos;" modified="2025-01-24T22:27:06.539490Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/README.md" added="2025-01-24T22:27:04.396122Z" modified="2025-01-24T22:27:04.396126Z" visited="2025-01-24T22:27:04.396123Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:27:04.396125Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/getting-started/requirements/compatible-enet-cables.md" added="2025-01-24T22:27:12.354376Z" modified="2025-01-24T22:27:12.354380Z" visited="2025-01-24T22:27:12.354376Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:27:12.354378Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/getting-started/software-installation/disable-antivirus.md" added="2025-01-24T22:27:23.107986Z" modified="2025-01-24T22:27:23.107989Z" visited="2025-01-24T22:27:23.107986Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:27:23.107988Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/getting-started/software-installation/generating-esys-token.md" added="2025-01-24T22:27:57.599080Z" modified="2025-01-24T22:27:57.599084Z" visited="2025-01-24T22:27:57.599081Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:27:57.599083Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/getting-started/software-installation/download.md" added="2025-01-24T22:38:18.771548Z" modified="2025-01-24T22:41:45.681277Z" visited="2025-01-24T22:38:18.771549Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-01-24T22:41:45.681275Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/osboxes/esys-for-beginners/_book/getting-started/software-installation/download.html" added="2025-01-24T22:40:46.143382Z" modified="2025-01-24T22:40:46.143386Z" visited="2025-01-24T22:40:46.143383Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;firefox %u&apos;" modified="2025-01-24T22:40:46.143384Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

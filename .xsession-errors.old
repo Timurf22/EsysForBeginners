@@ -1,0 +1,491 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/osboxes/.Xauthority
+/etc/X11/Xsession.d/30x11-common_xresources: line 16: has_option: command not found
+/etc/X11/Xsession.d/75dbus_dbus-launch: line 9: has_option: command not found
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+/etc/X11/Xsession.d/90x11-common_ssh-agent: line 9: has_option: command not found
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+dbus-update-activation-environment: setting LANGUAGE=en_US
+dbus-update-activation-environment: setting DESKTOP_SESSION=cinnamon
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting PWD=/home/osboxes
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=cinnamon
+dbus-update-activation-environment: setting LOGNAME=osboxes
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/osboxes/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/osboxes
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting HOME=/home/osboxes
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting USER=osboxes
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting GTK3_MODULES=xapp-gtk3-module
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/osboxes/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+dbus-update-activation-environment: setting GDMSESSION=cinnamon
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+discover_other_daemon: 1discover_other_daemon: 1discover_other_daemon: 1dbus-daemon[1612]: Activating service name='org.a11y.atspi.Registry' requested by ':1.1' (uid=1000 pid=1584 comm="/usr/bin/csd-color" label="unconfined")
+[cinnamon-settings-daemon-smartcard] Failed to start: no suitable smartcard driver could be found
+dbus-daemon[1612]: Successfully activated service 'org.a11y.atspi.Registry'
+[cinnamon-settings-daemon-smartcard] Failed to start: no suitable smartcard driver could be found
+
+** (csd-color:1584): WARNING **: 04:23:47.915: failed to get edid: unable to get EDID for output
+
+** (csd-color:1584): WARNING **: 04:23:47.955: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+/usr/bin/cinnamon-launcher:56: DeprecationWarning: This process (pid=1749) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.cinnamon_pid = os.fork()
+Gjs-Message: 04:23:51.502: Profiler is disabled. Not setting up signals.
+Gjs-Message: 04:23:51.748: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 04:23:51.836: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 04:23:51.841: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 04:23:51.861: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 04:23:52.053: JS LOG: [LookingGlass/info] loaded at Mon Jul 29 2024 04:23:52 GMT-0400 (Eastern Daylight Time)
+Gjs-Message: 04:23:52.053: JS LOG: Cinnamon started at Mon Jul 29 2024 04:23:52 GMT-0400 (Eastern Daylight Time)
+Gjs-Message: 04:23:52.069: JS LOG: [LookingGlass/info] ExtensionSystem started in 0 ms
+Gjs-Message: 04:23:52.070: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 04:23:52.070: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 04:23:52.191: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 55 ms
+Gjs-Message: 04:23:52.202: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 10 ms
+Gjs-Message: 04:23:52.208: JS LOG: [LookingGlass/info] Loaded applet separator@cinnamon.org in 6 ms
+Gjs-Message: 04:23:52.227: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 04:23:52.239: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 31 ms
+
+** (at-spi2-registryd:1659): WARNING **: 04:23:52.567: Failed to register client: GDBus.Error:org.gnome.SessionManager.AlreadyRegistered: Unable to register client
+
+** (at-spi2-registryd:1659): WARNING **: 04:23:52.567: Unable to register client with session manager
+Gjs-Message: 04:23:52.883: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 639 ms
+Gjs-Message: 04:23:53.185: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 302 ms
+Gjs-Message: 04:23:53.217: JS LOG: [LookingGlass/info] Role locked: notifications
+Gjs-Message: 04:23:53.320: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 75 ms
+Gjs-Message: 04:23:53.346: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 26 ms
+Gjs-Message: 04:23:53.715: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 346 ms
+Gjs-Message: 04:23:53.872: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 157 ms
+
+(vmware-user:1811): Gtk-WARNING **: 04:23:54.030: gtk_disable_setlocale() must be called before gtk_init()
+Gjs-Message: 04:23:54.310: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 423 ms
+Gjs-Message: 04:23:54.380: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 04:23:54.393: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 04:23:54.397: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 71 ms
+Gjs-Message: 04:23:54.572: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: nm-applet (:1.51/org/x/StatusIcon/Icon)
+Gjs-Message: 04:23:54.663: JS LOG: calendar@cinnamon.org: Calendar events supported.
+
+** (csd-power:1609): CRITICAL **: 04:23:54.672: abs_to_percentage: assertion 'max > min' failed
+Gjs-Message: 04:23:54.829: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 432 ms
+Gjs-Message: 04:23:54.979: JS LOG: [LookingGlass/info] Hiding XAppStatusIcon (we have an applet): nm-applet (:1.51/org/x/StatusIcon/Icon)
+Gjs-Message: 04:23:55.107: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 277 ms
+Nemo-Message: 04:23:55.152: nemo-desktop: session is cinnamon, establishing proxy
+blueman-applet 04.23.55 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 04.23.55 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+Gjs-Message: 04:23:55.685: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 578 ms
+Gjs-Message: 04:23:55.687: JS LOG: [LookingGlass/info] AppletManager started in 3632 ms
+Gjs-Message: 04:23:55.701: JS LOG: [LookingGlass/info] Cinnamon took 3952 ms to start
+Gjs-Message: 04:23:55.981: JS LOG: Unknown network device type, is 32
+
+(cinnamon:1770): mutter-WARNING **: 04:23:56.130: STACK_OP_ADD: window 0x3800001 already in stack
+
+(cinnamon:1770): mutter-WARNING **: 04:23:56.130: STACK_OP_ADD: window 0x3800001 already in stack
+blueman-applet 04.23.56 WARNING  DiscvManager:122 update_menuitems: warning: Adapter is None
+Gjs-Message: 04:23:56.621: JS LOG: Enabling WindowAttentionHandler
+Gjs-Message: 04:23:56.664: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.47/org/x/StatusIcon/Icon)
+Gjs-Message: 04:23:56.802: JS LOG: [LookingGlass/info] GPU offload supported: false
+
+** (csd-color:1584): WARNING **: 04:24:02.261: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+** (csd-color:1584): WARNING **: 04:24:02.263: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+** (csd-color:1584): WARNING **: 04:24:02.265: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Gjs-Message: 04:24:07.021: JS LOG: [LookingGlass/info] Removing XAppStatusIcon: blueman (:1.47/org/x/StatusIcon/Icon)
+cinnamon-session-binary[1361]: WARNING: t+20.38109s: Playing logout sound '/usr/share/mint-artwork/sounds/logout.ogg'
+cinnamon-session-binary[1361]: WARNING: t+21.81935s: Finished playing logout sound
+cinnamon-session-binary[1361]: WARNING: t+21.81945s: Resuming logout sequence...
+cinnamon-session-binary[1361]: WARNING: t+22.46903s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.46914s: Attempting to shutdown using systemd...
+
+(csd-print-notifications:1579): GLib-CRITICAL **: 04:24:09.115: Source ID 3 was not found when attempting to remove it
+cinnamon-session-binary[1361]: WARNING: t+22.58741s: Application 'cinnamon-settings-daemon-keyboard.desktop' killed by signal 1
+cinnamon-session-binary[1361]: WARNING: t+22.63156s: Application 'cinnamon-settings-daemon-power.desktop' killed by signal 1
+cinnamon-session-binary[1361]: WARNING: t+22.63162s: Application 'cinnamon.desktop' killed by signal 15
+cinnamon-session-binary[1361]: WARNING: t+22.65614s: Application 'cinnamon-settings-daemon-media-keys.desktop' killed by signal 1
+cinnamon-session-binary[1361]: WARNING: t+22.69082s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.69096s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.71391s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.71397s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.71615s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.71625s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.71642s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.71645s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.73422s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.73429s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.73439s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.73442s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.73447s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.73449s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.73457s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.73459s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.73463s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.73465s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.75006s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.75011s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.75826s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.75831s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.75839s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.75842s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.75847s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.75849s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.75978s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.75982s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76446s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76452s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76466s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76472s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76482s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76486s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76494s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76496s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76503s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76506s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76513s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76516s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76534s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76540s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.76546s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.76548s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.78719s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.78724s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.78751s: Requesting system shutdown...
+cinnamon-session-binary[1361]: WARNING: t+22.78754s: Attempting to shutdown using systemd...
+cinnamon-session-binary[1361]: WARNING: t+22.92311s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.92363s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92368s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92370s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92372s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92373s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92375s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92376s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92378s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92379s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92381s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92383s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92385s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92386s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92388s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92391s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92393s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92397s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92400s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92404s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92406s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92409s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92411s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92413s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92417s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92419s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92427s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.92433s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92434s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92436s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92437s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92440s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92442s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92443s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92445s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92448s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92450s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92451s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92452s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92454s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92455s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92457s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92458s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92460s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92461s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92463s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92464s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92465s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92467s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92468s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92470s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92471s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92474s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.92475s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92477s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92478s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92480s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92481s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92483s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92484s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92485s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92487s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92489s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92490s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92491s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92493s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92494s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92496s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92497s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92499s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92500s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92502s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.92503s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93393s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93407s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93409s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93410s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93412s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93417s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93419s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93421s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93422s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93424s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93425s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93427s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93428s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93432s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93435s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93436s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93438s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93442s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93444s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93446s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93448s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93450s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93452s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93454s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93456s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93459s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93462s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93464s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93467s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93469s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93471s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93478s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93480s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93484s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93485s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93488s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93489s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93491s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93494s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93497s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93498s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93500s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93501s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93503s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93509s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93510s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93512s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93513s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93515s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93516s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93518s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93519s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93520s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93523s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93526s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93528s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93529s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93533s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93535s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93537s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93539s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93540s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93542s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93544s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93545s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93547s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93549s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93550s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93552s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93554s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93556s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93558s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93559s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93561s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93563s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93565s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93567s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93569s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93570s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93573s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93574s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93576s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93578s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93582s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93584s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93586s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93588s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93589s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93591s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93593s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93594s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93598s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93601s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93603s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93607s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93608s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93610s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93612s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93614s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93616s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93619s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93621s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93623s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93627s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93629s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93631s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93633s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93635s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93637s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93641s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93643s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93645s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93646s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93649s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93653s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93657s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93659s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93661s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93662s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93664s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93666s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93668s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93670s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93672s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93674s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93677s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93679s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93681s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93683s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93685s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93686s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93689s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93690s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93692s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93694s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93700s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93701s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93707s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93709s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93710s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93714s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93715s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93716s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93718s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93720s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93721s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93722s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93724s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93725s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93727s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93728s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93730s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93732s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93735s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93737s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93738s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93740s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93742s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93743s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93745s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93746s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93750s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93751s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93753s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93754s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93755s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93757s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93758s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93760s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93761s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93763s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93766s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93767s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93769s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93770s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93772s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93773s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93775s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93776s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93777s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93779s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93780s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93782s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93783s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93785s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93786s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93791s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93794s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93795s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93797s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93800s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93801s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93803s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93804s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93806s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93807s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93809s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93810s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93812s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93813s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93814s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93816s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93818s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93819s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93820s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93822s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93825s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93826s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93828s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93829s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93831s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93832s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93834s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93840s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93841s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93844s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93846s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93847s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93849s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93852s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93855s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93857s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93858s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93860s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93861s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93863s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93865s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93870s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93871s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93874s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93876s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93877s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93882s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93884s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93886s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93887s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93888s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93890s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93891s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93894s: Unable to stop system via systemd: GDBus.Error:org.freedesktop.login1.OperationInProgress: There's already a shutdown or sleep operation in progress
+cinnamon-session-binary[1361]: WARNING: t+22.93895s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93900s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93902s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93904s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93907s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93909s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93912s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93914s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93915s: Using an MDM logout action to shutdown/reboot the system.
+cinnamon-session-binary[1361]: WARNING: t+22.93917s: Using an MDM logout action to shutdown/reboot the system.
+
+(cinnamon:2248): mutter-WARNING **: 04:24:09.788: Failed to create backend: Unable to open display ':0'

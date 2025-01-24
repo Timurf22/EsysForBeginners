@@ -1,0 +1,37 @@
+{
+  "updates": {
+    "firefox": {
+      "type": "security",
+      "since": "2025.01.24",
+      "days": 1
+    },
+    "evolution-data-server": {
+      "type": "package",
+      "since": "2025.01.24",
+      "days": 1
+    },
+    "bind9": {
+      "type": "security",
+      "since": "2025.01.24",
+      "days": 1
+    },
+    "linux-meta": {
+      "type": "kernel",
+      "since": "2025.01.24",
+      "days": 1
+    },
+    "poppler": {
+      "type": "security",
+      "since": "2025.01.24",
+      "days": 1
+    },
+    "ubuntu-system-adjustments": {
+      "type": "package",
+      "since": "2025.01.24",
+      "days": 1
+    }
+  },
+  "version": 1,
+  "checked": "2025.01.24",
+  "notified": "2025.01.24"
+}

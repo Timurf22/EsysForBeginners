@@ -1,0 +1,1488 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <title data-l10n-id="newtab-page-title"></title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png"/>
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="toolkit/branding/brandings.ftl" />
+    <link rel="localization" href="browser/newtab/newtab.ftl" />
+    <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
+    <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
+    <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css" />
+  </head>
+  <!-- Cached: Fri, 24 Jan 2025 22:45:23 GMT -->
+  <body class="activity-stream">
+    <div id="header-asrouter-container" role="presentation"></div>
+    <div id="root">
+      <div><menu class="personalizeButtonWrapper"><span><button class="icon icon-settings personalize-button" data-l10n-id="newtab-personalize-icon-label"></button><div class="customize-menu" role="dialog" data-l10n-id="newtab-personalize-dialog-label"><div class="close-button-wrapper"><button class="close-button" data-l10n-id="newtab-custom-close-button"></button></div><div class="home-section"><div id="shortcuts-section" class="section"><moz-toggle id="shortcuts-toggle" pressed="true" onToggle="function() {
+    [native code]
+}" data-preference="feeds.topsites" data-eventSource="TOP_SITES" data-l10n-id="newtab-custom-shortcuts-toggle" data-l10n-attrs="label, description"></moz-toggle><div><div class="more-info-top-wrapper"><div class="more-information"><select id="row-selector" class="selector" name="row-count" data-preference="topSitesRows" aria-labelledby="custom-shortcuts-title"><option selected="" value="1" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 1}"></option><option value="2" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 2}"></option><option value="3" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 3}"></option><option value="4" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 4}"></option></select><div class="check-wrapper" role="presentation"><input type="checkbox" id="sponsored-shortcuts" class="sponsored-checkbox" checked="" data-preference="showSponsoredTopSites" data-eventSource="SPONSORED_TOP_SITES"/><label class="sponsored" for="sponsored-shortcuts" data-l10n-id="newtab-custom-sponsored-sites"></label></div></div></div></div></div><div id="pocket-section" class="section"><label class="switch"><moz-toggle id="pocket-toggle" pressed="true" onToggle="function() {
+    [native code]
+}" aria-describedby="custom-pocket-subtitle" data-preference="feeds.section.topstories" data-eventSource="TOP_STORIES" data-l10n-id="newtab-custom-stories-toggle" data-l10n-attrs="label, description"></moz-toggle></label><div><div class="more-info-pocket-wrapper"><div class="more-information"><div class="check-wrapper" role="presentation"><input type="checkbox" id="sponsored-pocket" class="sponsored-checkbox" checked="" data-preference="showSponsored" data-eventSource="POCKET_SPOCS"/><label class="sponsored" for="sponsored-pocket" data-l10n-id="newtab-custom-pocket-sponsored"></label></div></div></div></div></div><div id="recent-section" class="section"><label class="switch"><moz-toggle id="highlights-toggle" onToggle="function() {
+    [native code]
+}" data-preference="feeds.section.highlights" data-eventSource="HIGHLIGHTS" data-l10n-id="newtab-custom-recent-toggle" data-l10n-attrs="label, description"></moz-toggle></label></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></div></span></menu><div class="outer-wrapper ds-outer-wrapper-search-alignment ds-outer-wrapper-breakpoint-override visible-logo"><main><div class="non-collapsible-section"><div class="search-wrapper"><div class="logo-and-wordmark"><div class="logo"></div><div class="wordmark"></div></div><div class="search-inner-wrapper"><button class="search-handoff-button" tabindex="-1"><div class="fake-textbox"></div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"/><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites"><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h3 class="section-title-container " style="visibility:hidden"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites"></span></span><span class="learn-more-link-wrapper"></span></h3></div><div><ul class="top-sites-list"><li class="top-site-outer placeholder  "><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span dir="auto"><br/></span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder  "><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span dir="auto"><br/></span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder  "><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span dir="auto"><br/></span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="http://localhost:4000/getting-started/software-installation/disable-antivirus.html" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="l"><div class="top-site-icon rich-icon" style="background-image:url(data:image/png;base64,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)"></div></div></div><div class="title"><span dir="auto">localhost</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;localhost&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span dir="auto">YouTube</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.facebook.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="F"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png)"></div></div></div><div class="title"><span dir="auto">Facebook</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Facebook&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span dir="auto">Reddit</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png)"></div></div></div><div class="title"><span dir="auto">Wikipedia</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li></ul><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><section class="collapsible-section ds-layout" data-section-id="topstories"><div class="section-top-bar"><h3 class="section-title-container "><span class="section-title"><span data-l10n-id="newtab-section-header-stories"></span></span><span class="learn-more-link-wrapper"><span class="learn-more-link"><a href="https://getpocket.com/firefox/new_tab_learn_more" data-l10n-id="newtab-pocket-learn-more"></a></span></span></h3></div><div><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div><div class="ds-card-grid    ds-card-grid-include-descriptions "><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/inside-the-unsolved-murder-of-jfk-s-mistress-mary-pinchot-meyer?utm_source=firefox-newtab-en-us" title="Inside the Unsolved Murder of JFK’s Mistress Mary Pinchot Meyer" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Town &amp; Country Magazine</p><header class="title clamp">Inside the Unsolved Murder of JFK’s Mistress Mary Pinchot Meyer</header><p class="excerpt clamp">A true crime podcast revisits the mysterious 1964 murder of the Washington, D.C. socialite.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Inside the Unsolved Murder of JFK’s Mistress Mary Pinchot Meyer&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s.zkcdn.net/Advertisers/04a08d5dc3c64fff8020afa7321cebe8.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg 404w"/></picture></div><a href="https://play.forgeofempires.com/?ref=firefox_us_us_cpc&amp;bid=tradeportwinterA&amp;external_param=tradeportwinterA" title="If You Need to Kill Time on Your Computer, This Popular Strategy Game Is a Must" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">play.forgeofempires.com</p><header class="title clamp">If You Need to Kill Time on Your Computer, This Popular Strategy Game Is a Must</header><p class="excerpt clamp">This game will keep you up at night. No download needed.</p></div><div class="story-footer"><p class="story-sponsored-label  clamp"><span data-l10n-args="{&quot;sponsor&quot;:&quot;Forge of Empires&quot;}" data-l10n-id="newtab-label-sponsored-by"></span></p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;If You Need to Kill Time on Your Computer, This Popular Strategy Game Is a Must&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/50f4f949-2383-4c37-abe9-c8c72d726691.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F50f4f949-2383-4c37-abe9-c8c72d726691.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/how-a-6-000-year-old-dog-cancer-spread-around-the-world?utm_source=firefox-newtab-en-us" title="How a 6,000-Year-Old Dog Cancer Spread Around the World" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">WIRED</p><header class="title clamp">How a 6,000-Year-Old Dog Cancer Spread Around the World</header><p class="excerpt clamp">A massive collection of dog tumor samples is revealing the secrets of a contagious, parasite-like cancer that could help explain human cancers too.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How a 6,000-Year-Old Dog Cancer Spread Around the World&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/how-a-dose-of-mdma-transformed-a-white-supremacist?utm_source=firefox-newtab-en-us" title="How a Dose of MDMA Transformed a White Supremacist" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">BBC Future</p><header class="title clamp">How a Dose of MDMA Transformed a White Supremacist</header><p class="excerpt clamp">Brendan was once a leader in the US white nationalist movement. But when he took MDMA in a scientific study, it radically changed his beliefs – to the surprise of everyone involved.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How a Dose of MDMA Transformed a White Supremacist&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://ichef.bbci.co.uk/images/ic/1920xn/p0kl46pd.jpg.webp" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl46pd.jpg.webp 404w"/></picture></div><a href="https://www.bbc.com/culture/article/20250121-why-some-mexicans-are-criticising-oscar-tipped-emilia-perez?utm_source=firefox-newtab-en-us" title="‘You’re Playing With One of Our Biggest Wars’: Why Some Mexican People Are Upset About Oscar-Tipped Film Emilia Pérez" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><header class="title clamp">‘You’re Playing With One of Our Biggest Wars’: Why Some Mexican People Are Upset About Oscar-Tipped Film Emilia Pérez</header><p class="excerpt clamp">French director Jacques Audiard’s musical Emilia Pérez, about a Mexican drug lord, is a frontrunner for the Academy Awards. But its depiction of the country is stoking criticism.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘You’re Playing With One of Our Biggest Wars’: Why Some Mexican People Are Upset About Oscar-Tipped Film Emilia Pérez&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/self-checkout-is-a-failed-experiment?utm_source=firefox-newtab-en-us" title="Self-Checkout Is a Failed Experiment" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">The Atlantic</p><header class="title clamp">Self-Checkout Is a Failed Experiment</header><p class="excerpt clamp">Please, not another “unexpected item in the bagging area.”</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Self-Checkout Is a Failed Experiment&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/ebf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/the-simple-dutch-cure-for-stress?utm_source=firefox-newtab-en-us" title="The Simple Dutch Cure for Stress" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Nautilus</p><header class="title clamp">The Simple Dutch Cure for Stress</header><p class="excerpt clamp">“Uitwaaien” is a popular activity around Amsterdam.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Simple Dutch Cure for Stress&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/56451572-85d5-4e88-bcbb-890a10869ca9.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F56451572-85d5-4e88-bcbb-890a10869ca9.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/how-to-stop-and-prevent-bloating?utm_source=firefox-newtab-en-us" title="How to Stop—And Prevent—Bloating" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Domino</p><header class="title clamp">How to Stop—And Prevent—Bloating</header><p class="excerpt clamp">Soothe your stomach with these tips.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to Stop—And Prevent—Bloating&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg 404w"/></picture></div><a href="https://www.npr.org/2025/01/23/nx-s1-5272701/karla-sofia-gascon-trans-actress-oscar-nomination-emilia-perez?utm_source=firefox-newtab-en-us" title="Karla Sofía Gascón Is the First Openly Trans Actress to Receive an Oscar Nomination" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">NPR</p><header class="title clamp">Karla Sofía Gascón Is the First Openly Trans Actress to Receive an Oscar Nomination</header><p class="excerpt clamp">The Spanish actress portrays the titular character in Emilia Pérez, a polarizing musical that focuses on the life of a transgender drug lord in Mexico.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Karla Sofía Gascón Is the First Openly Trans Actress to Receive an Oscar Nomination&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://th-thumbnailer.cdn-si-edu.com/nK8MGH50K_je1A_8_ShVXMfQ4Kk=/fit-in/1200x0/filters:focal(492x255:493x256)/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler_public%2F5d%2F2c%2F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%2Fprototaxites_01.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2FnK8MGH50K_je1A_8_ShVXMfQ4Kk%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(492x255%3A493x256)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F5d%252F2c%252F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%252Fprototaxites_01.jpg 404w"/></picture></div><a href="https://www.smithsonianmag.com/smart-news/giant-mysterious-spires-ruled-the-earth-long-before-trees-did-what-exactly-are-these-odd-looking-fossils-13709647/?utm_source=firefox-newtab-en-us" title="Giant, Mysterious Spires Ruled the Earth Long Before Trees Did. What Exactly Are These Odd-Looking Fossils?" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Smithsonian Magazine</p><header class="title clamp">Giant, Mysterious Spires Ruled the Earth Long Before Trees Did. What Exactly Are These Odd-Looking Fossils?</header><p class="excerpt clamp">For more than 150 years, scientists have debated whether Prototaxites—which stood roughly 24 feet tall and 3 feet wide—were an early lichen or fungus, like a “giant mushroom”</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Giant, Mysterious Spires Ruled the Earth Long Before Trees Did. What Exactly Are These Odd-Looking Fossils?&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://ichef.bbci.co.uk/images/ic/1920xn/p0kl5vy5.jpg.webp" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fimages%2Fic%2F1920xn%2Fp0kl5vy5.jpg.webp 404w"/></picture></div><a href="https://www.bbc.com/future/article/20250121-the-physics-transforming-cancer?utm_source=firefox-newtab-en-us" title="The Ultra-Fast Cancer Treatments Which Could Replace Conventional Radiotherapy" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><header class="title clamp">The Ultra-Fast Cancer Treatments Which Could Replace Conventional Radiotherapy</header><p class="excerpt clamp">A pioneering new treatment promises to tackle a wider range of cancers, with fewer side-effects than conventional radiotherapy. It also takes less than a second.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Ultra-Fast Cancer Treatments Which Could Replace Conventional Radiotherapy&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://media.wired.com/photos/679163ea81b10acbc3e4f33b/191:100/w_1280,c_limit/security_subaru_getty.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.wired.com%2Fphotos%2F679163ea81b10acbc3e4f33b%2F191%3A100%2Fw_1280%2Cc_limit%2Fsecurity_subaru_getty.jpg 404w"/></picture></div><a href="https://www.wired.com/story/subaru-location-tracking-vulnerabilities/?utm_source=firefox-newtab-en-us" title="Subaru Security Flaws Exposed Its System for Tracking Millions of Cars" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">WIRED</p><header class="title clamp">Subaru Security Flaws Exposed Its System for Tracking Millions of Cars</header><p class="excerpt clamp">Now-fixed web bugs allowed hackers to remotely unlock and start millions of Subarus. More disturbingly, they could also access at least a year of cars’ location histories—and Subaru employees still can.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Subaru Security Flaws Exposed Its System for Tracking Millions of Cars&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://images2.minutemediacdn.com/image/upload/c_crop,w_5040,h_2835,x_0,y_0/images/GettyImages/mmsport/mentalfloss/01jhgbpj44gk4ptbexds" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_crop%2Cw_5040%2Ch_2835%2Cx_0%2Cy_0%2Fimages%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01jhgbpj44gk4ptbexds 404w"/></picture></div><a href="https://www.mentalfloss.com/why-is-it-called-a-manila-envelope?utm_source=firefox-newtab-en-us" title="Why Is It Called a “Manila” Envelope?" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Mental Floss</p><header class="title clamp">Why Is It Called a “Manila” Envelope?</header><p class="excerpt clamp">There’s a surprising connection between the capital of the Philippines and mailing important documents.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why Is It Called a “Manila” Envelope?&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/an-american-tragedy-the-colorful-life-and-shocking-death-of-ovid-neal-iii?utm_source=firefox-newtab-en-us" title="An American Tragedy: The Colorful Life and Shocking Death of Ovid Neal III" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Narratively</p><header class="title clamp">An American Tragedy: The Colorful Life and Shocking Death of Ovid Neal III</header><p class="excerpt clamp">On the dark streets of a college town, two teenagers hoisted a rock and ended a man’s life. His loved ones want to know when we’ll finally value the lives of homeless people.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;An American Tragedy: The Colorful Life and Shocking Death of Ovid Neal III&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-01/250121-panama-canal-mb-1033-725ff8.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Ft_nbcnews-fp-1200-630%2Cf_auto%2Cq_auto%3Abest%2Frockcms%2F2025-01%2F250121-panama-canal-mb-1033-725ff8.jpg 404w"/></picture></div><a href="https://www.nbcnews.com/news/world/trump-panama-canal-china-rubio-rcna188491?utm_source=firefox-newtab-en-us" title="Trump Says China Controls the Panama Canal — but Here’s How It Really Works" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">NBC News</p><header class="title clamp">Trump Says China Controls the Panama Canal — but Here’s How It Really Works</header><p class="excerpt clamp">Both China and Panama deny there is any interference in the running of the critical waterway, whose neutrality experts say has been vital to its success.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Trump Says China Controls the Panama Canal — but Here’s How It Really Works&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1835x1032+41+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F04%2F3e%2Fd643093a430aa329785f38759253%2Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1835x1032%2B41%2B0%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F04%252F3e%252Fd643093a430aa329785f38759253%252Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg 404w"/></picture></div><a href="https://www.npr.org/2025/01/21/nx-s1-5268949/jesse-eisenberg-a-real-pain?utm_source=firefox-newtab-en-us" title="In ‘A Real Pain,’ Jesse Eisenberg Asks: What Is the Purpose of ‘Tragedy Tourism’?" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">NPR</p><header class="title clamp">In ‘A Real Pain,’ Jesse Eisenberg Asks: What Is the Purpose of ‘Tragedy Tourism’?</header><p class="excerpt clamp">Eisenberg’s film follows two cousins on a Jewish heritage tour of Poland, which includes a stop at the Majdanek death camp. The story draws on his own family history — and his struggle with OCD.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;In ‘A Real Pain,’ Jesse Eisenberg Asks: What Is the Purpose of ‘Tragedy Tourism’?&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg 404w"/></picture></div><a href="https://www.newstatesman.com/culture/books/2025/01/how-we-misread-the-great-gatsby?utm_source=firefox-newtab-en-us" title="How We Misread ‘The Great Gatsby’" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">New Statesman</p><header class="title clamp">How We Misread ‘The Great Gatsby’</header><p class="excerpt clamp">The greatness of F Scott Fitzgerald’s novel, published 100 years ago, lies in its details. But they are often overlooked, buried beneath a century of accumulated cliché.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How We Misread ‘The Great Gatsby’&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/the-american-missionary-and-the-uncontacted-tribe?utm_source=firefox-newtab-en-us" title="The American Missionary and the Uncontacted Tribe" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">GQ</p><header class="title clamp">The American Missionary and the Uncontacted Tribe</header><p class="excerpt clamp">John Chau had ambitions for a great awakening. But what awaited instead was tragedy.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The American Missionary and the Uncontacted Tribe&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://api.time.com/wp-content/uploads/2025/01/GettyImages-2194387867.jpg?quality=85&amp;w=1024&amp;h=628&amp;crop=1" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2025%2F01%2FGettyImages-2194387867.jpg%3Fquality%3D85%26w%3D1024%26h%3D628%26crop%3D1 404w"/></picture></div><a href="https://time.com/7209181/fossil-fuel-billionaires-wealth-trump-inauguration/?utm_source=firefox-newtab-en-us" title="Fossil Fuel Billionaires Boost Wealth by $3 Billion After Trump’s Inauguration" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Time</p><header class="title clamp">Fossil Fuel Billionaires Boost Wealth by $3 Billion After Trump’s Inauguration</header><p class="excerpt clamp">One day after Trump’s inauguration, oil and gas billionaires see their total wealth boosted by more than $3 billion.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Fossil Fuel Billionaires Boost Wealth by $3 Billion After Trump’s Inauguration&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://th-thumbnailer.cdn-si-edu.com/u72ltMOCHeI48MYKP4xgjFRxTYU=/fit-in/1200x0/filters:focal(667x1000:668x1001)/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler_public%2F99%2Fe4%2F99e4640f-796e-4f0a-8e37-660fde78a6fb%2Fhelmet.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fth-thumbnailer.cdn-si-edu.com%2Fu72ltMOCHeI48MYKP4xgjFRxTYU%3D%2Ffit-in%2F1200x0%2Ffilters%3Afocal(667x1000%3A668x1001)%2Fhttps%253A%252F%252Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%252Ffiler_public%252F99%252Fe4%252F99e4640f-796e-4f0a-8e37-660fde78a6fb%252Fhelmet.jpg 404w"/></picture></div><a href="https://www.smithsonianmag.com/smart-news/you-can-buy-a-2500-year-old-corinthian-helmet-worn-by-a-warrior-in-ancient-greece-180985881/?utm_source=firefox-newtab-en-us" title="You Can Buy a 2,500-Year-Old Corinthian Helmet Worn by a Warrior in Ancient Greece" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Smithsonian Magazine</p><header class="title clamp">You Can Buy a 2,500-Year-Old Corinthian Helmet Worn by a Warrior in Ancient Greece</header><p class="excerpt clamp">Experts think the well-preserved bronze artifact was made between 500 and 450 B.C.E. It will be sold at auction on January 25</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;You Can Buy a 2,500-Year-Old Corinthian Helmet Worn by a Warrior in Ancient Greece&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3  "><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/cd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fcd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg 404w"/></picture></div><a href="https://getpocket.com/explore/item/what-s-the-longest-novel-ever-published?utm_source=firefox-newtab-en-us" title="What’s the Longest Novel Ever Published?" class="ds-card-link"><div class="impression-observer"></div></a><div class="meta"><div class="info-wrap"><p class="source clamp">Mental Floss</p><header class="title clamp">What’s the Longest Novel Ever Published?</header><p class="excerpt clamp">It clocks in at 1.3 million words and 9.6 million characters.</p></div></div><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;What’s the Longest Novel Ever Published?&quot;}" class="context-menu-button icon"></button></div></div></div></article></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><span class="ds-navigation-header" data-l10n-id="newtab-pocket-read-more"></span><ul><li><a href="https://getpocket.com/explore/self-improvement?utm_source=pocket-newtab">Self improvement</a></li><li><a href="https://getpocket.com/explore/food?utm_source=pocket-newtab">Food</a></li><li><a href="https://getpocket.com/explore/entertainment?utm_source=pocket-newtab">Entertainment</a></li><li><a href="https://getpocket.com/explore/health?utm_source=pocket-newtab">Health &amp; fitness</a></li><li><a href="https://getpocket.com/explore/science?utm_source=pocket-newtab">Science</a></li><li><a href="https://getpocket.com/explore?utm_source=pocket-newtab">More recommendations ›</a></li></ul><a href="https://www.mozilla.org/privacy/firefox/#recommend-relevant-content" class="ds-navigation-privacy"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-top: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main><aside></aside></div></div>
+    </div>
+    <div id="footer-asrouter-container" role="presentation"></div>
+    <script src="about:home?jscache"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-toggle.mjs"></script>
+  </body>
+</html>
+window.__FROM_STARTUP_CACHE__ = true;
+window.__STARTUP_STATE__ = {
+	"TopSites": {
+		"initialized": true,
+		"rows": [
+			{
+				"isDefault": true,
+				"url": "https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_03cfee4af8f4e83aa01c792ecf65f545415939aaff1383065519e6ca&mfadid=adm",
+				"hostname": "amazon",
+				"sendAttributionRequest": false,
+				"label": "Amazon",
+				"show_sponsored_label": true,
+				"sponsored_position": 1,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgClnxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgF49DnIQfRNnCD31iwvuEnX13kIuCkjIfcvDIrvIEkErCEj4fkzDBnXIfwqYCwjIfD_lECe4EcDdCGvTicwGFnd4ElkkCGvefq_DEGNgEdDYFC7c7ReOgClWftaW7REkiCkX7RERiCkY7ndZj9eKiF3agCbnirjvIpkZ4CxafZLk4CqnxGEwxRwvIpkX4plY1CDrfpHrfQfa4pLX1C8nJG4kjpkW7R7kHnWzIncTxmDnx93kiF2zftIqx%3D4vIpkW7ncWfZd4DZeaCc37jldCf9NgEcEkCwfWsDdCf9NfElEkCcH_IqzDEC44iqDZCGvtIOIQj9wvIpkY7n4YIFwqgCLZfplnx%3DXvIpkXfpbr7n3Zx%3D7vIpkXfpl_7n3Zx%3DcqjnwqgClWfClnI94WHGEqjnwqgCHafQlnI94WiFzvIpkX4pHm7ncqxmXvIpkX4plY1CDrfpHrfZHkfZlZ1ClnxmXVj%3D_dJCkX7nwvHZkufCTufCTufCTufCTufBIwJwEBCpdfBllZIwIDipNG4n_XBdIfxmE1DG2WBk7F3wHYjcIP4Ej9Im_c3GbWCRj5sqAwfq7l3CwoE%3DcajnudfF8Yfm352GwnsQ4VIDzRjG7_sENQsCNtJRjkHRen4FXPBnjCFR782Fwi2kNoHqAWslu_FEEr2Zw7Cnduxr3%3D4nqY1%3D4Gi%3DdS7C7t4%3DxXfBDY2nAwfq73D%3Dv57C7tspcmsDIEDkj93D7_Eqlwfq8d2DdICD7lHm7lDlzE4CN4Cnd3Ikv22REejYDZ3tDZ3tIYj%3DzZgB%2FM6QTS1Y%2FnHrbzftak4plW5pbTfCbX4tWW5pbTfCbW4YWT5tWTj%3DwTIG4W5%3D7NHmuniFXTGm4VJn3dHmwmI2yy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgCLZfplnx%3DXNHmEuIF%2Bk5FwqgClWfpxnHF2uxmETIF4kiFzU5FwqgClkfC8%2B4CxW4QxZ4Q2ZfCf%2BfBIZJ%3Dzk5F%2BdJF7wxQkX",
+				"sponsored_tile_id": 74301,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CjoKOGh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMDExLzE2MDI1MTczODUuanBnEiCPWEpTJukrjsNjZdZ-ENKI3O38x6nmTcNlFXn6RNaaQQ",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://temuaffiliateprogram.pxf.io/Jz52V7?subId1=141295706723848192&mfadid=adm",
+				"hostname": "temuaffiliateprogram.pxf",
+				"sendAttributionRequest": false,
+				"label": "Temu",
+				"show_sponsored_label": true,
+				"sponsored_position": 2,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgC8nxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgDdDDGN4inTXCRvefq_PBGvg3clkCE3osBIWHQkXfpbUftIdj%3DqzfBIdImqzfOIuxr3WGmwqspkW7nuriF2zfZDa1pxYfZfZ7RcdIG7_iF2zfC2XfQqd4Zbm4Z8Z1p2afCqY7ndZj92zftIYj%3D7TgFINJ94w7Rekj%3DwqgCbnI9eQiF2zftIQj9wvIpkY7n4YIFwqgClW4pbr7ReTiF2zfCbW4YIqxreOiF2zfC2rftIqxreNI9IvIpkX4pfX7n3Zx%3DcdI9IvIpkafQ2_7n3Zx%3DwViF2zfCfkfYINI94TiF2zfC2XfQqd4Zbm4Zfm4pfX4QLk7R4TJr3UjFkzfOIviFfz5ClM5ClM5ClM5ClM5ClnIF_EDqWzClNefmIFE%3DLaEZII4GEQir2wfq7%2FsCDkJD7fEZcQ3ld9invl3EEeHGwmxq4EBnwRfr7uf9qZCFwBIn7REC7CjGIUfnzOxl3n4qfwfqIGED7F2mzqfk4B4ceiFDXC2djr7C7tBcj8FEc8BwEl4mues%3Djr3D_axkka4E3UjrxYFq4eiZN94l2nxR3VxZkS1Y%2FM6QTS7n4WgCbUfQbYftWW5p8a1pHTftWW5plWfpxT5tWT593vJ%3DEZxtXOHF4oInwTJczQJm_qjF4vjnDy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgClW4pbr7ReTHF4wJFEUjtdvIpkXfpbr7ncq5G4wJ%3DEQj%3DwVJOdvIpkX4plY1CDrfpHrfZHkfZlm1p2nxmXVjtdUjFdOIG8zfLyy",
+				"sponsored_tile_id": 75169,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xNDMxL2UxYjMxOGJkNDkzNDYyN2Q3MjZkNTFmOWM1ZDQyNTVjZWFhNjI0MWRkYmY4M2RmMDE5MGUyMjBiN2E4MWUyODUuanBnEiCF1FoJ1nRR2YvYgV1umBhTKA482BKOK56b6gVGpg0XUQ",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.1800flowers.com/?r=admarketplace&utm_source=admarketplace&utm_medium=cpc&utm_campaign=1-800_Flowers_Privacy&utm_term=flowerstile&utm_content=141295706723848192&mfadid=adm",
+				"hostname": "1800flowers",
+				"sendAttributionRequest": false,
+				"label": "1-800 Flowers",
+				"show_sponsored_label": true,
+				"sponsored_position": 3,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgCfnxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgDdDDGN4inTXCRvefq_PBGvg3clkCE3osBIWHQkXfpbUftIdj%3DqzfBIdImqzfOIuxr3WGmwqspkW7nuriF2zfZDa1pqr4CHZ7RcdIG7_iF2zfC2XfQqd4Zbm4Z8Z1p2afCqY7ndZj92zftIYj%3D7TgFINJ94w7Rekj%3DwqgCbnI9eQiF2zftIQj9wvIpkY7n4YIFwqgClW4ZlY7ReTiF2zfCbW4YIqxreOiF2zfC8X1BIqxreNI9IvIpkXfQ8_7n3Zx%3DcdI9IvIpka4CbY7n3Zx%3DwViF2zfClZfBINI94TiF2zfC2XfQqd4Zbm4Zfm4pfX1p8k7R4TJr3UjFkzfYIviFfz5ClM5ClM5ClM5ClM5ClnIF_EDqWzClNefmIFE%3DLaEZI6jZeEFlDaDG4vsG2Y1%3DWrBEcSBmLa3FuNxcwnjnzUfDEZEODY3nInxq3%2FJpwkiwqwfqIZ4qEOjkjYCDjXxqwRDFjwCdHYfw8ZsGeEil_eHwIvJRDrfrDwfqI3E94Tjq2r3FkWirEmBljlC%3DEOim_kIG3aIpLaFEwgxp3OiRIQ2n7HJRjQ4Dj8Ep4vCZNTscwfB%3DdYFqfYDw7CE%3DAX4mX6JRIiBCLY4%3Dd%2F3qz3fdxdBGxm1lw6ikWwfqIP2CjH2nvNikzVxmNf2re%2Fi%3DwS3Ec2xCc7sQev3lXtEREkJquEInIi3p3uDQ3aEqHdfQlZCw2dxd787C7%3D3cHasq4kBwepErHXfwEFDrI7IYDZ3tIYj%3DzZgB%2FM6QTS1Y%2FnHrbzftaWfQHW5pbTfQ8X1BWW5pbTfCbW4YWT5tWTj%3DwTIG4W5%3D7NHmuniFXTGm4VJn3dHmwmI2yy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgClW4ZlY7ReTHF4wJFEUjtdvIpkXfpbr7ncq5G4wJ%3DEQj%3DwVJOdvIpkX4plY1CDrfpHrfZHkfZlafQ2nxmXVjtdUjFdOIG8zfWyy",
+				"sponsored_tile_id": 74983,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMjI5LzgxZjc0NjkwOGRkNjNjZTZkOTBkNWNiMzExZTQ5ZjI1MDMwNzE2YWQ1OTU1NmUxNDBmY2U2Y2M0OTliNDg1MGUuSlBHEiB9tTHL2kiJ2-Qbz5mzEN5XPPNFdnIZ8iFmtEhZkwap0g",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 2300,
+				"guid": "s5ErLu042B_5",
+				"lastVisitDate": 1737758374029,
+				"title": "Disable Antivirus · GitBook",
+				"url": "http://localhost:4000/getting-started/software-installation/disable-antivirus.html",
+				"type": "history",
+				"favicon": "data:image/png;base64,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",
+				"faviconLength": 7052,
+				"faviconRef": "",
+				"faviconSize": 144,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEOElEQVRYR8VXayitWRh+tu02qGPquDR0YvwgGsbxR4aSGiXXDPmjpkk0v6TcJUnJjMKv8WPKHyElGU6imKKEcilDxmVGzKTBcKRDG+Myz7tm7Da2vb9vd8ysWn3f/ta73udZ73pv24D/eRgyMjIir6+vb1xcXEwGg+FdVFTUYX19/c1z8KJep7m5uRfEenFzc+NGPKMQuLUEu729vebCHr9tca5w/mQ0GicHBgZ+1kMqPT09jPKfOTk5vSZYOHV+zN8fcTpb6nlEwAbIb1x7QzLfPUUmMzPzE4J9RbAvKPtKC2E9BO703RJgjCcruSPC077mt28o8LkWUJsW4AlN9IkPNCg653VVUO4lZy0JONnb4+zs/BeH0VL2kQUGBwdxfn6Og4MD7O7uYnt7G5ubm1hdXYXJZLKHodZdXV0RGhqqZnBwMAICAuDn5wcPDw/k5eX9Sf0+d4qsErCGQqtgaWkJY2NjmJmZAU//SCw6OhrJycmIiYmBm5ubVbIOE7DUtrW1hdLS0is6nNmj6+rqFLC9oYvA1NQURkdHQb8Aw/UeQHZ29j1f6enpgaenpz187VfAhIHGxkakpqbi8vIS4+PjaGpqQliYhDdgi8DFxQVGRkawt7eHyMhIxMXFmYlptkBbWxvOzs5QW1urNtfU1CAkJAQFBQU2CYhviKxcU1BQENbX15Gfn4+cnBy1TzOBjo4OzM/Po6WlBVdXVygpKUFKSgpyc3NtEpCIKSsrU9YKDw9HX18fJLK6urr0ETg8PERFRQVOT0+Vx/v4+KC5uRleXl42CaytraGyshKtra3KYkNDQ+jt7YX4iC4LiPDk5KRSJKO8vBzx8fHmu3zKBxgZygJHR0fKXxYWFpCVlaWuQTeB2dlZZUoZ1dXViI2NtUtABMRqxcXFYNZT11BVVQVmv/+OwP7+PoqKihRgWloaCgsL9UeB7HDUAp2dnejv71eg4g8OhaEjBMTMw8PD6O7uVo7r6+uL9vZ2sAF5fgvIKSVsJWnJYOVDQ0MDIiIizODP6oSWKN7e3lIrVBZ8ODQnIr1XIPL+/v5ISkpSjvdUXbBLQBKN1G1JPFJSFxcXNYWh1A0x9124nZycYHl5WaXinZ0dSGRIeHJKHf8nJuXlYVP6yGb/fggMDERCQgISExPVSa0lIrl/SV7T09PY2Niw2jM81K+ZgJkxPV3ulqe71w+wnb9YWVlxk8ZFz9BNQI9yLbIGZiyX4+NjD/Z7UmVestv1ZQy/4lP6+HDm9k95r0FalD2UoZ5fuXeRT/lP8Qsbm9+p7w+m6LfEezcxMXFudgZbAPQTPypJokwaFWbyabX1oYz8u3rD5w/MAz+ybT+wR1wTAUsl7Ae86GxfEqSK3wNlje9HBP6WUfM96/+JPVDLdd0E7jaz+/V0d3eXWv0hgb8m8Fs9wGandmTT+9zjsAXeF4m/AUHzuC6uTAIjAAAAAElFTkSuQmCC",
+				"smallFaviconLength": 1137,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 32,
+				"hostname": "localhost",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.facebook.com/",
+				"hostname": "facebook",
+				"sendAttributionRequest": false,
+				"label": "Facebook",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/facebook-com.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.wikipedia.org/",
+				"hostname": "wikipedia",
+				"sendAttributionRequest": false,
+				"label": "Wikipedia",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
+				"typedBonus": true
+			}
+		],
+		"editForm": null,
+		"showSearchShortcutsForm": false,
+		"searchShortcuts": [
+			{
+				"keyword": "@google",
+				"shortURL": "google",
+				"url": "https://google.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/google-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/google-com.ico"
+			},
+			{
+				"keyword": "@amazon",
+				"shortURL": "amazon",
+				"url": "https://amazon.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/amazon@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/amazon.ico"
+			},
+			{
+				"keyword": "@bing",
+				"shortURL": "bing",
+				"url": "https://bing.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bing-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bing-com.ico"
+			},
+			{
+				"keyword": "@duckduckgo",
+				"shortURL": "duckduckgo",
+				"url": "https://duckduckgo.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/duckduckgo-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/duckduckgo-com.ico"
+			},
+			{
+				"keyword": "@ebay",
+				"shortURL": "ebay",
+				"url": "https://ebay.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ebay@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ebay.ico"
+			},
+			{
+				"keyword": "@wikipedia",
+				"shortURL": "wikipedia",
+				"url": "https://wikipedia.org",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico"
+			}
+		],
+		"sov": {
+			"ready": true,
+			"positions": [
+				{
+					"position": 1,
+					"assignedPartner": "amp"
+				},
+				{
+					"position": 2,
+					"assignedPartner": "amp"
+				},
+				{
+					"position": 3,
+					"assignedPartner": "amp"
+				}
+			]
+		},
+		"pref": {
+			"collapsed": false
+		}
+	},
+	"App": {
+		"initialized": true,
+		"locale": "en-US",
+		"isForStartupCache": true,
+		"customizeMenuVisible": false,
+		"links": [
+			{
+				"isDefault": true,
+				"url": "https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_03cfee4af8f4e83aa01c792ecf65f545415939aaff1383065519e6ca&mfadid=adm",
+				"hostname": "amazon",
+				"sendAttributionRequest": false,
+				"label": "Amazon",
+				"show_sponsored_label": true,
+				"sponsored_position": 1,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgClnxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgF49DnIQfRNnCD31iwvuEnX13kIuCkjIfcvDIrvIEkErCEj4fkzDBnXIfwqYCwjIfD_lECe4EcDdCGvTicwGFnd4ElkkCGvefq_DEGNgEdDYFC7c7ReOgClWftaW7REkiCkX7RERiCkY7ndZj9eKiF3agCbnirjvIpkZ4CxafZLk4CqnxGEwxRwvIpkX4plY1CDrfpHrfQfa4pLX1C8nJG4kjpkW7R7kHnWzIncTxmDnx93kiF2zftIqx%3D4vIpkW7ncWfZd4DZeaCc37jldCf9NgEcEkCwfWsDdCf9NfElEkCcH_IqzDEC44iqDZCGvtIOIQj9wvIpkY7n4YIFwqgCLZfplnx%3DXvIpkXfpbr7n3Zx%3D7vIpkXfpl_7n3Zx%3DcqjnwqgClWfClnI94WHGEqjnwqgCHafQlnI94WiFzvIpkX4pHm7ncqxmXvIpkX4plY1CDrfpHrfZHkfZlZ1ClnxmXVj%3D_dJCkX7nwvHZkufCTufCTufCTufCTufBIwJwEBCpdfBllZIwIDipNG4n_XBdIfxmE1DG2WBk7F3wHYjcIP4Ej9Im_c3GbWCRj5sqAwfq7l3CwoE%3DcajnudfF8Yfm352GwnsQ4VIDzRjG7_sENQsCNtJRjkHRen4FXPBnjCFR782Fwi2kNoHqAWslu_FEEr2Zw7Cnduxr3%3D4nqY1%3D4Gi%3DdS7C7t4%3DxXfBDY2nAwfq73D%3Dv57C7tspcmsDIEDkj93D7_Eqlwfq8d2DdICD7lHm7lDlzE4CN4Cnd3Ikv22REejYDZ3tDZ3tIYj%3DzZgB%2FM6QTS1Y%2FnHrbzftak4plW5pbTfCbX4tWW5pbTfCbW4YWT5tWTj%3DwTIG4W5%3D7NHmuniFXTGm4VJn3dHmwmI2yy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgCLZfplnx%3DXNHmEuIF%2Bk5FwqgClWfpxnHF2uxmETIF4kiFzU5FwqgClkfC8%2B4CxW4QxZ4Q2ZfCf%2BfBIZJ%3Dzk5F%2BdJF7wxQkX",
+				"sponsored_tile_id": 74301,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CjoKOGh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMDExLzE2MDI1MTczODUuanBnEiCPWEpTJukrjsNjZdZ-ENKI3O38x6nmTcNlFXn6RNaaQQ",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://temuaffiliateprogram.pxf.io/Jz52V7?subId1=141295706723848192&mfadid=adm",
+				"hostname": "temuaffiliateprogram.pxf",
+				"sendAttributionRequest": false,
+				"label": "Temu",
+				"show_sponsored_label": true,
+				"sponsored_position": 2,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgC8nxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgDdDDGN4inTXCRvefq_PBGvg3clkCE3osBIWHQkXfpbUftIdj%3DqzfBIdImqzfOIuxr3WGmwqspkW7nuriF2zfZDa1pxYfZfZ7RcdIG7_iF2zfC2XfQqd4Zbm4Z8Z1p2afCqY7ndZj92zftIYj%3D7TgFINJ94w7Rekj%3DwqgCbnI9eQiF2zftIQj9wvIpkY7n4YIFwqgClW4pbr7ReTiF2zfCbW4YIqxreOiF2zfC2rftIqxreNI9IvIpkX4pfX7n3Zx%3DcdI9IvIpkafQ2_7n3Zx%3DwViF2zfCfkfYINI94TiF2zfC2XfQqd4Zbm4Zfm4pfX4QLk7R4TJr3UjFkzfOIviFfz5ClM5ClM5ClM5ClM5ClnIF_EDqWzClNefmIFE%3DLaEZII4GEQir2wfq7%2FsCDkJD7fEZcQ3ld9invl3EEeHGwmxq4EBnwRfr7uf9qZCFwBIn7REC7CjGIUfnzOxl3n4qfwfqIGED7F2mzqfk4B4ceiFDXC2djr7C7tBcj8FEc8BwEl4mues%3Djr3D_axkka4E3UjrxYFq4eiZN94l2nxR3VxZkS1Y%2FM6QTS7n4WgCbUfQbYftWW5p8a1pHTftWW5plWfpxT5tWT593vJ%3DEZxtXOHF4oInwTJczQJm_qjF4vjnDy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgClW4pbr7ReTHF4wJFEUjtdvIpkXfpbr7ncq5G4wJ%3DEQj%3DwVJOdvIpkX4plY1CDrfpHrfZHkfZlm1p2nxmXVjtdUjFdOIG8zfLyy",
+				"sponsored_tile_id": 75169,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xNDMxL2UxYjMxOGJkNDkzNDYyN2Q3MjZkNTFmOWM1ZDQyNTVjZWFhNjI0MWRkYmY4M2RmMDE5MGUyMjBiN2E4MWUyODUuanBnEiCF1FoJ1nRR2YvYgV1umBhTKA482BKOK56b6gVGpg0XUQ",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.1800flowers.com/?r=admarketplace&utm_source=admarketplace&utm_medium=cpc&utm_campaign=1-800_Flowers_Privacy&utm_term=flowerstile&utm_content=141295706723848192&mfadid=adm",
+				"hostname": "1800flowers",
+				"sendAttributionRequest": false,
+				"label": "1-800 Flowers",
+				"show_sponsored_label": true,
+				"sponsored_position": 3,
+				"sponsored_click_url": "https://bridge.sfo1.admarketplace.net/ctp?version=1.0.0&encp=jnEYxmwVJQkX5QbUftINI%3DwqgCfnxGEkgClrfZxr4C2rfQlmfZLnHnwqI%3DEYD%3DcYHFdZgDdDDGN4inTXCRvefq_PBGvg3clkCE3osBIWHQkXfpbUftIdj%3DqzfBIdImqzfOIuxr3WGmwqspkW7nuriF2zfZDa1pqr4CHZ7RcdIG7_iF2zfC2XfQqd4Zbm4Z8Z1p2afCqY7ndZj92zftIYj%3D7TgFINJ94w7Rekj%3DwqgCbnI9eQiF2zftIQj9wvIpkY7n4YIFwqgClW4ZlY7ReTiF2zfCbW4YIqxreOiF2zfC8X1BIqxreNI9IvIpkXfQ8_7n3Zx%3DcdI9IvIpka4CbY7n3Zx%3DwViF2zfClZfBINI94TiF2zfC2XfQqd4Zbm4Zfm4pfX1p8k7R4TJr3UjFkzfYIviFfz5ClM5ClM5ClM5ClM5ClnIF_EDqWzClNefmIFE%3DLaEZI6jZeEFlDaDG4vsG2Y1%3DWrBEcSBmLa3FuNxcwnjnzUfDEZEODY3nInxq3%2FJpwkiwqwfqIZ4qEOjkjYCDjXxqwRDFjwCdHYfw8ZsGeEil_eHwIvJRDrfrDwfqI3E94Tjq2r3FkWirEmBljlC%3DEOim_kIG3aIpLaFEwgxp3OiRIQ2n7HJRjQ4Dj8Ep4vCZNTscwfB%3DdYFqfYDw7CE%3DAX4mX6JRIiBCLY4%3Dd%2F3qz3fdxdBGxm1lw6ikWwfqIP2CjH2nvNikzVxmNf2re%2Fi%3DwS3Ec2xCc7sQev3lXtEREkJquEInIi3p3uDQ3aEqHdfQlZCw2dxd787C7%3D3cHasq4kBwepErHXfwEFDrI7IYDZ3tIYj%3DzZgB%2FM6QTS1Y%2FnHrbzftaWfQHW5pbTfQ8X1BWW5pbTfCbW4YWT5tWTj%3DwTIG4W5%3D7NHmuniFXTGm4VJn3dHmwmI2yy",
+				"sponsored_impression_url": "https://imp.mt48.net/static?id=7RHzfOIXjFEYsBdvIpkX4plY1CDrfpHrfQfa4pLX1C8nj9wWIBdvIpkY7n4YIFckiGIw5FwqgClW4ZlY7ReTHF4wJFEUjtdvIpkXfpbr7ncq5G4wJ%3DEQj%3DwVJOdvIpkX4plY1CDrfpHrfZHkfZlafQ2nxmXVjtdUjFdOIG8zfWyy",
+				"sponsored_tile_id": 74983,
+				"partner": "amp",
+				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMjI5LzgxZjc0NjkwOGRkNjNjZTZkOTBkNWNiMzExZTQ5ZjI1MDMwNzE2YWQ1OTU1NmUxNDBmY2U2Y2M0OTliNDg1MGUuSlBHEiB9tTHL2kiJ2-Qbz5mzEN5XPPNFdnIZ8iFmtEhZkwap0g",
+				"faviconSize": 200,
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 2300,
+				"guid": "s5ErLu042B_5",
+				"lastVisitDate": 1737758374029,
+				"title": "Disable Antivirus · GitBook",
+				"url": "http://localhost:4000/getting-started/software-installation/disable-antivirus.html",
+				"type": "history",
+				"favicon": "data:image/png;base64,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",
+				"faviconLength": 7052,
+				"faviconRef": "",
+				"faviconSize": 144,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEOElEQVRYR8VXayitWRh+tu02qGPquDR0YvwgGsbxR4aSGiXXDPmjpkk0v6TcJUnJjMKv8WPKHyElGU6imKKEcilDxmVGzKTBcKRDG+Myz7tm7Da2vb9vd8ysWn3f/ta73udZ73pv24D/eRgyMjIir6+vb1xcXEwGg+FdVFTUYX19/c1z8KJep7m5uRfEenFzc+NGPKMQuLUEu729vebCHr9tca5w/mQ0GicHBgZ+1kMqPT09jPKfOTk5vSZYOHV+zN8fcTpb6nlEwAbIb1x7QzLfPUUmMzPzE4J9RbAvKPtKC2E9BO703RJgjCcruSPC077mt28o8LkWUJsW4AlN9IkPNCg653VVUO4lZy0JONnb4+zs/BeH0VL2kQUGBwdxfn6Og4MD7O7uYnt7G5ubm1hdXYXJZLKHodZdXV0RGhqqZnBwMAICAuDn5wcPDw/k5eX9Sf0+d4qsErCGQqtgaWkJY2NjmJmZAU//SCw6OhrJycmIiYmBm5ubVbIOE7DUtrW1hdLS0is6nNmj6+rqFLC9oYvA1NQURkdHQb8Aw/UeQHZ29j1f6enpgaenpz187VfAhIHGxkakpqbi8vIS4+PjaGpqQliYhDdgi8DFxQVGRkawt7eHyMhIxMXFmYlptkBbWxvOzs5QW1urNtfU1CAkJAQFBQU2CYhviKxcU1BQENbX15Gfn4+cnBy1TzOBjo4OzM/Po6WlBVdXVygpKUFKSgpyc3NtEpCIKSsrU9YKDw9HX18fJLK6urr0ETg8PERFRQVOT0+Vx/v4+KC5uRleXl42CaytraGyshKtra3KYkNDQ+jt7YX4iC4LiPDk5KRSJKO8vBzx8fHmu3zKBxgZygJHR0fKXxYWFpCVlaWuQTeB2dlZZUoZ1dXViI2NtUtABMRqxcXFYNZT11BVVQVmv/+OwP7+PoqKihRgWloaCgsL9UeB7HDUAp2dnejv71eg4g8OhaEjBMTMw8PD6O7uVo7r6+uL9vZ2sAF5fgvIKSVsJWnJYOVDQ0MDIiIizODP6oSWKN7e3lIrVBZ8ODQnIr1XIPL+/v5ISkpSjvdUXbBLQBKN1G1JPFJSFxcXNYWh1A0x9124nZycYHl5WaXinZ0dSGRIeHJKHf8nJuXlYVP6yGb/fggMDERCQgISExPVSa0lIrl/SV7T09PY2Niw2jM81K+ZgJkxPV3ulqe71w+wnb9YWVlxk8ZFz9BNQI9yLbIGZiyX4+NjD/Z7UmVestv1ZQy/4lP6+HDm9k95r0FalD2UoZ5fuXeRT/lP8Qsbm9+p7w+m6LfEezcxMXFudgZbAPQTPypJokwaFWbyabX1oYz8u3rD5w/MAz+ybT+wR1wTAUsl7Ae86GxfEqSK3wNlje9HBP6WUfM96/+JPVDLdd0E7jaz+/V0d3eXWv0hgb8m8Fs9wGandmTT+9zjsAXeF4m/AUHzuC6uTAIjAAAAAElFTkSuQmCC",
+				"smallFaviconLength": 1137,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 32,
+				"hostname": "localhost",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.facebook.com/",
+				"hostname": "facebook",
+				"sendAttributionRequest": false,
+				"label": "Facebook",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/facebook-com.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.wikipedia.org/",
+				"hostname": "wikipedia",
+				"sendAttributionRequest": false,
+				"label": "Wikipedia",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
+				"typedBonus": true
+			}
+		],
+		"pref": {
+			"collapsed": false
+		}
+	},
+	"ASRouter": {
+		"initialized": false
+	},
+	"Prefs": {
+		"initialized": true,
+		"values": {
+			"default.sites": "https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+			"feeds.section.topstories.options": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"hidden\":false,\"provider_icon\":\"chrome://global/skin/icons/pocket.svg\",\"provider_name\":\"Pocket\",\"read_more_endpoint\":\"https://getpocket.com/explore/trending?src=fx_new_tab\",\"stories_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_on\",\"stories_referrer\":\"https://getpocket.com/recommendations\",\"topics_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US\",\"show_spocs\":true}",
+			"feeds.topsites": true,
+			"hideTopSitesTitle": false,
+			"showSponsored": true,
+			"system.showSponsored": true,
+			"showSponsoredTopSites": true,
+			"system.showWeather": false,
+			"showWeather": true,
+			"weather.query": "",
+			"weather.locationSearchEnabled": false,
+			"weather.temperatureUnits": "f",
+			"weather.display": "simple",
+			"pocketCta": "{\"cta_button\":\"\",\"cta_text\":\"\",\"cta_url\":\"\",\"use_cta\":false}",
+			"showSearch": true,
+			"topSitesRows": 1,
+			"telemetry": true,
+			"telemetry.ut.events": false,
+			"telemetry.structuredIngestion.endpoint": "https://incoming.telemetry.mozilla.org/submit",
+			"section.highlights.includeVisited": true,
+			"section.highlights.includeBookmarks": true,
+			"section.highlights.includePocket": true,
+			"section.highlights.includeDownloads": true,
+			"section.highlights.rows": 1,
+			"section.topstories.rows": 1,
+			"sectionOrder": "topsites,topstories,highlights",
+			"newtabWallpapers.enabled": false,
+			"newtabWallpapers.v2.enabled": false,
+			"newtabWallpapers.highlightEnabled": false,
+			"newtabWallpapers.highlightDismissed": false,
+			"newtabWallpapers.highlightSeenCounter": 0,
+			"newtabWallpapers.highlightHeaderText": "",
+			"newtabWallpapers.highlightContentText": "",
+			"newtabWallpapers.highlightCtaText": "",
+			"newtabWallpapers.wallpaper-light": "",
+			"newtabWallpapers.wallpaper-dark": "",
+			"newtabWallpapers.wallpaper": "",
+			"improvesearch.noDefaultSearchTile": true,
+			"improvesearch.topSiteSearchShortcuts.searchEngines": "google,amazon",
+			"improvesearch.topSiteSearchShortcuts.havePinned": "",
+			"asrouter.devtoolsEnabled": false,
+			"asrouter.providers.onboarding": "{\"id\":\"onboarding\",\"type\":\"local\",\"localProvider\":\"OnboardingMessageProvider\",\"enabled\":true,\"exclude\":[]}",
+			"discoverystream.flight.blocks": "{}",
+			"discoverystream.config": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"collapsible\":true,\"enabled\":true}",
+			"discoverystream.endpoints": "https://getpocket.cdn.mozilla.net/,https://firefox-api-proxy.cdn.mozilla.net/,https://spocs.getpocket.com/",
+			"discoverystream.isCollectionDismissible": true,
+			"discoverystream.onboardingExperience.dismissed": false,
+			"discoverystream.region-basic-layout": false,
+			"discoverystream.spoc.impressions": "{}",
+			"discoverystream.endpointSpocsClear": "https://spocs.getpocket.com/user",
+			"discoverystream.rec.impressions": "{\"6939483944322767\":1737756750000,\"1119387282097392\":1737756750005}",
+			"showRecentSaves": true,
+			"feeds.aboutpreferences": true,
+			"feeds.newtabinit": true,
+			"feeds.places": true,
+			"feeds.prefs": true,
+			"feeds.sections": true,
+			"feeds.section.highlights": false,
+			"feeds.system.topstories": true,
+			"feeds.systemtick": true,
+			"feeds.telemetry": true,
+			"feeds.favicon": true,
+			"feeds.system.topsites": true,
+			"feeds.recommendationprovider": true,
+			"feeds.discoverystreamfeed": true,
+			"feeds.wallpaperfeed": true,
+			"feeds.weatherfeed": true,
+			"isPrivateBrowsingEnabled": true,
+			"platform": "linux",
+			"region": "US",
+			"fxa_endpoint": "https://accounts.firefox.com/",
+			"appUpdateChannel": "release",
+			"improvesearch.topSiteSearchShortcuts": true,
+			"mayHaveSponsoredTopSites": true,
+			"improvesearch.handoffToAwesomebar": true,
+			"featureConfig": {
+				"customizationMenuEnabled": null,
+				"topSitesContileEnabled": true
+			},
+			"pocketConfig": {
+				"spocPositions": "1,5,7,11,18,20",
+				"spocTopsitesPositions": "2",
+				"contileTopsitesPositions": "0,1,2",
+				"spocAdTypes": "",
+				"spocZoneIds": "",
+				"spocTopsitesAdTypes": "",
+				"spocTopsitesZoneIds": "",
+				"spocTopsitesPlacementEnabled": true,
+				"spocSiteId": "",
+				"widgetPositions": "",
+				"hybridLayout": false,
+				"hideCardBackground": false,
+				"fourCardLayout": false,
+				"newFooterSection": false,
+				"saveToPocketCard": true,
+				"saveToPocketCardRegions": "",
+				"hideDescriptions": false,
+				"hideDescriptionsRegions": "",
+				"compactGrid": false,
+				"compactImages": false,
+				"imageGradient": false,
+				"titleLines": 3,
+				"descLines": 3,
+				"onboardingExperience": false,
+				"essentialReadsHeader": false,
+				"editorsPicksHeader": false,
+				"recentSavesEnabled": false,
+				"readTime": true,
+				"newSponsoredLabel": false,
+				"sendToPocket": true,
+				"weatherLocationSearch": false,
+				"recsPersonalized": false,
+				"spocsPersonalized": true,
+				"spocsCacheTimeout": null,
+				"ctaButtonSponsors": "",
+				"ctaButtonVariant": "",
+				"spocMessageVariant": "",
+				"regionStoriesConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"regionBffConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"regionStoriesBlock": "",
+				"localeListConfig": "",
+				"regionSpocsConfig": "US,CA,DE,GB,FR,IT,ES",
+				"regionWeatherConfig": "",
+				"topSitesContileSovEnabled": true,
+				"pocketFeedParameters": ""
+			},
+			"logowordmark.alwaysVisible": true,
+			"feeds.section.topstories": true,
+			"discoverystream.enabled": true,
+			"discoverystream.sponsored-collections.enabled": false,
+			"discoverystream.hardcoded-basic-layout": false,
+			"discoverystream.personalization.enabled": true,
+			"discoverystream.personalization.override": false,
+			"discoverystream.personalization.modelKeys": "nb_model_arts_and_entertainment, nb_model_autos_and_vehicles, nb_model_beauty_and_fitness, nb_model_blogging_resources_and_services, nb_model_books_and_literature, nb_model_business_and_industrial, nb_model_computers_and_electronics, nb_model_finance, nb_model_food_and_drink, nb_model_games, nb_model_health, nb_model_hobbies_and_leisure, nb_model_home_and_garden, nb_model_internet_and_telecom, nb_model_jobs_and_education, nb_model_law_and_government, nb_model_online_communities, nb_model_people_and_society, nb_model_pets_and_animals, nb_model_real_estate, nb_model_reference, nb_model_science, nb_model_shopping, nb_model_sports, nb_model_travel",
+			"discoverystream.spocs-endpoint": "",
+			"discoverystream.spocs-endpoint-query": "",
+			"newNewtabExperience.colors": "#0090ED,#FF4F5F,#2AC3A2,#FF7139,#A172FF,#FFA437,#FF2A8A"
+		}
+	},
+	"Dialog": {
+		"visible": false,
+		"data": {}
+	},
+	"Sections": [
+		{
+			"title": {
+				"id": "newtab-section-header-stories"
+			},
+			"rows": [],
+			"enabled": true,
+			"id": "topstories",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recommended-by-header-generic"
+				},
+				"descString": {
+					"id": "home-prefs-recommended-by-description-generic"
+				},
+				"nestedPrefs": [
+					{
+						"name": "showSponsored",
+						"titleString": "home-prefs-recommended-by-option-sponsored-stories",
+						"icon": "icon-info",
+						"eventSource": "POCKET_SPOCS"
+					}
+				],
+				"learnMore": {
+					"link": {
+						"href": "https://getpocket.com/firefox/new_tab_learn_more",
+						"id": "home-prefs-recommended-by-learn-more"
+					}
+				},
+				"collapsed": false,
+				"feed": "feeds.section.topstories"
+			},
+			"shouldHidePref": false,
+			"eventSource": "TOP_STORIES",
+			"icon": "chrome://global/skin/icons/pocket.svg",
+			"learnMore": {
+				"link": {
+					"href": "https://getpocket.com/firefox/new_tab_learn_more",
+					"message": {
+						"id": "newtab-pocket-learn-more"
+					}
+				}
+			},
+			"compactCards": false,
+			"rowsPref": "section.topstories.rows",
+			"maxRows": 4,
+			"availableLinkMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-topstories-generic"
+				},
+				"icon": "check"
+			},
+			"shouldSendImpressionStats": true,
+			"dedupeFrom": [
+				"highlights"
+			],
+			"options": {
+				"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+				"hidden": false,
+				"provider_icon": "chrome://global/skin/icons/pocket.svg",
+				"provider_name": "Pocket",
+				"read_more_endpoint": "https://getpocket.com/explore/trending?src=fx_new_tab",
+				"stories_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_on",
+				"stories_referrer": "https://getpocket.com/recommendations",
+				"topics_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US",
+				"show_spocs": true
+			},
+			"contextMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"initialized": false,
+			"dedupeConfigurations": [
+				{
+					"id": "topstories",
+					"dedupeFrom": [
+						"highlights"
+					]
+				}
+			]
+		},
+		{
+			"title": {
+				"id": "newtab-section-header-recent-activity"
+			},
+			"rows": [],
+			"enabled": false,
+			"id": "highlights",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recent-activity-header"
+				},
+				"descString": {
+					"id": "home-prefs-recent-activity-description"
+				},
+				"nestedPrefs": [
+					{
+						"name": "section.highlights.includeVisited",
+						"titleString": "home-prefs-highlights-option-visited-pages"
+					},
+					{
+						"name": "section.highlights.includeBookmarks",
+						"titleString": "home-prefs-highlights-options-bookmarks"
+					},
+					{
+						"name": "section.highlights.includeDownloads",
+						"titleString": "home-prefs-highlights-option-most-recent-download"
+					},
+					{
+						"name": "section.highlights.includePocket",
+						"titleString": "home-prefs-highlights-option-saved-to-pocket",
+						"hidden": false
+					}
+				],
+				"collapsed": false,
+				"feed": "feeds.section.highlights"
+			},
+			"shouldHidePref": false,
+			"eventSource": "HIGHLIGHTS",
+			"icon": "chrome://global/skin/icons/highlights.svg",
+			"compactCards": true,
+			"rowsPref": "section.highlights.rows",
+			"maxRows": 4,
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-highlights"
+				},
+				"icon": "chrome://global/skin/icons/highlights.svg"
+			},
+			"shouldSendImpressionStats": false,
+			"options": {},
+			"initialized": false
+		}
+	],
+	"Pocket": {
+		"isUserLoggedIn": null,
+		"pocketCta": {},
+		"waitingForSpoc": true
+	},
+	"Personalization": {
+		"lastUpdated": 1737757525425,
+		"initialized": true
+	},
+	"DiscoveryStream": {
+		"config": {
+			"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+			"collapsible": true,
+			"enabled": true
+		},
+		"layout": [
+			{
+				"width": 12,
+				"components": [
+					{
+						"type": "TopSites",
+						"header": {
+							"title": {
+								"id": "newtab-section-header-topsites"
+							}
+						},
+						"placement": {
+							"name": "sponsored-topsites",
+							"ad_types": [
+								3120
+							],
+							"zone_ids": [
+								280143
+							]
+						},
+						"spocs": {
+							"probability": 1,
+							"prefs": [
+								"showSponsoredTopSites"
+							],
+							"positions": [
+								{
+									"index": 2
+								}
+							]
+						},
+						"properties": {}
+					},
+					{
+						"type": "Message",
+						"essentialReadsHeader": false,
+						"editorsPicksHeader": false,
+						"header": {
+							"title": {
+								"id": "newtab-section-header-stories"
+							},
+							"subtitle": "",
+							"link_text": {
+								"id": "newtab-pocket-learn-more"
+							},
+							"link_url": "https://getpocket.com/firefox/new_tab_learn_more",
+							"icon": "chrome://global/skin/icons/pocket.svg"
+						},
+						"properties": {
+							"spocMessageVariant": ""
+						},
+						"styles": {
+							".ds-message": "margin-bottom: -20px"
+						}
+					},
+					{
+						"type": "CardGrid",
+						"properties": {
+							"items": 21,
+							"hybridLayout": false,
+							"hideCardBackground": false,
+							"fourCardLayout": false,
+							"compactGrid": false,
+							"essentialReadsHeader": false,
+							"editorsPicksHeader": false,
+							"onboardingExperience": false,
+							"ctaButtonSponsors": [
+								""
+							],
+							"ctaButtonVariant": "",
+							"spocMessageVariant": ""
+						},
+						"widgets": {
+							"positions": [],
+							"data": [
+								{
+									"type": "TopicsWidget"
+								}
+							]
+						},
+						"cta_variant": "link",
+						"header": {
+							"title": ""
+						},
+						"placement": {
+							"name": "spocs",
+							"ad_types": [
+								3617
+							],
+							"zone_ids": [
+								217758,
+								217995
+							]
+						},
+						"feed": {
+							"embed_reference": null,
+							"url": "https://firefox-api-proxy.cdn.mozilla.net/desktop/v1/recommendations?locale=$locale&region=$region&count=30"
+						},
+						"spocs": {
+							"probability": 1,
+							"positions": [
+								{
+									"index": 1
+								},
+								{
+									"index": 5
+								},
+								{
+									"index": 7
+								},
+								{
+									"index": 11
+								},
+								{
+									"index": 18
+								},
+								{
+									"index": 20
+								}
+							]
+						}
+					},
+					{
+						"type": "Navigation",
+						"newFooterSection": false,
+						"properties": {
+							"alignment": "left-align",
+							"links": [
+								{
+									"name": "Self improvement",
+									"url": "https://getpocket.com/explore/self-improvement?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Food",
+									"url": "https://getpocket.com/explore/food?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Entertainment",
+									"url": "https://getpocket.com/explore/entertainment?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Health & fitness",
+									"url": "https://getpocket.com/explore/health?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Science",
+									"url": "https://getpocket.com/explore/science?utm_source=pocket-newtab"
+								},
+								{
+									"name": "More recommendations ›",
+									"url": "https://getpocket.com/explore?utm_source=pocket-newtab"
+								}
+							],
+							"extraLinks": [
+								{
+									"name": "Career",
+									"url": "https://getpocket.com/explore/career?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Technology",
+									"url": "https://getpocket.com/explore/technology?utm_source=pocket-newtab"
+								}
+							],
+							"privacyNoticeURL": {
+								"url": "https://www.mozilla.org/privacy/firefox/#recommend-relevant-content",
+								"title": {
+									"id": "newtab-section-menu-privacy-notice"
+								}
+							}
+						},
+						"header": {
+							"title": {
+								"id": "newtab-pocket-read-more"
+							}
+						},
+						"styles": {
+							".ds-navigation": "margin-top: -10px;"
+						}
+					}
+				]
+			}
+		],
+		"isPrivacyInfoModalVisible": false,
+		"isCollectionDismissible": true,
+		"feeds": {
+			"data": {
+				"https://firefox-api-proxy.cdn.mozilla.net/desktop/v1/recommendations?locale=$locale&region=$region&count=30": {
+					"lastUpdated": 1737758412397,
+					"personalized": true,
+					"data": {
+						"settings": {},
+						"recommendations": [
+							{
+								"id": 1119387282097392,
+								"url": "https://getpocket.com/explore/item/inside-the-unsolved-murder-of-jfk-s-mistress-mary-pinchot-meyer?utm_source=firefox-newtab-en-us",
+								"title": "Inside the Unsolved Murder of JFK’s Mistress Mary Pinchot Meyer",
+								"excerpt": "A true crime podcast revisits the mysterious 1964 murder of the Washington, D.C. socialite.",
+								"publisher": "Town & Country Magazine",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/47161f47-f9ba-46bc-9172-eaf152256cd9.jpeg",
+								"recommendation_id": "6c955b1d-1780-428a-a909-b0419d83032c",
+								"score": 1
+							},
+							{
+								"id": 6363080835004198,
+								"url": "https://getpocket.com/explore/item/how-a-6-000-year-old-dog-cancer-spread-around-the-world?utm_source=firefox-newtab-en-us",
+								"title": "How a 6,000-Year-Old Dog Cancer Spread Around the World",
+								"excerpt": "A massive collection of dog tumor samples is revealing the secrets of a contagious, parasite-like cancer that could help explain human cancers too.",
+								"publisher": "WIRED",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/50f4f949-2383-4c37-abe9-c8c72d726691.jpeg",
+								"recommendation_id": "3cb02bc5-e24b-4174-b65b-34195c0f261c",
+								"score": 1
+							},
+							{
+								"id": 579093479744136,
+								"url": "https://getpocket.com/explore/item/how-a-dose-of-mdma-transformed-a-white-supremacist?utm_source=firefox-newtab-en-us",
+								"title": "How a Dose of MDMA Transformed a White Supremacist",
+								"excerpt": "Brendan was once a leader in the US white nationalist movement. But when he took MDMA in a scientific study, it radically changed his beliefs – to the surprise of everyone involved.",
+								"publisher": "BBC Future",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/64a59a71-7ca8-44cb-a3c6-d78803141d07.jpeg",
+								"recommendation_id": "f98baa4a-aca1-46f0-a4d4-745f4975b191",
+								"score": 1
+							},
+							{
+								"id": 7135164814052172,
+								"url": "https://www.bbc.com/culture/article/20250121-why-some-mexicans-are-criticising-oscar-tipped-emilia-perez?utm_source=firefox-newtab-en-us",
+								"title": "‘You’re Playing With One of Our Biggest Wars’: Why Some Mexican People Are Upset About Oscar-Tipped Film Emilia Pérez",
+								"excerpt": "French director Jacques Audiard’s musical Emilia Pérez, about a Mexican drug lord, is a frontrunner for the Academy Awards. But its depiction of the country is stoking criticism.",
+								"publisher": "BBC",
+								"raw_image_src": "https://ichef.bbci.co.uk/images/ic/1920xn/p0kl46pd.jpg.webp",
+								"recommendation_id": "3ebb71ae-0be1-4cda-b299-b1ea15cfec01",
+								"score": 1
+							},
+							{
+								"id": 6939483944322767,
+								"url": "https://getpocket.com/explore/item/self-checkout-is-a-failed-experiment?utm_source=firefox-newtab-en-us",
+								"title": "Self-Checkout Is a Failed Experiment",
+								"excerpt": "Please, not another “unexpected item in the bagging area.”",
+								"publisher": "The Atlantic",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c33911ee-40c9-4c71-be92-5d71f6b3040c.jpeg",
+								"recommendation_id": "c4c2b138-71cf-408f-8c4c-4760f84978ca",
+								"score": 1
+							},
+							{
+								"id": 2156713888588114,
+								"url": "https://getpocket.com/explore/item/the-simple-dutch-cure-for-stress?utm_source=firefox-newtab-en-us",
+								"title": "The Simple Dutch Cure for Stress",
+								"excerpt": "“Uitwaaien” is a popular activity around Amsterdam.",
+								"publisher": "Nautilus",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/ebf2622f-7b8f-4eb5-a3ef-c3e3042c9fd9.jpeg",
+								"recommendation_id": "b4967615-e297-40f0-b7ad-c0577340b837",
+								"score": 1
+							},
+							{
+								"id": 5356731737591766,
+								"url": "https://getpocket.com/explore/item/how-to-stop-and-prevent-bloating?utm_source=firefox-newtab-en-us",
+								"title": "How to Stop—And Prevent—Bloating",
+								"excerpt": "Soothe your stomach with these tips.",
+								"publisher": "Domino",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/56451572-85d5-4e88-bcbb-890a10869ca9.jpeg",
+								"recommendation_id": "e01d75d8-3376-4447-ad05-e4d7259b4328",
+								"score": 1
+							},
+							{
+								"id": 3964349087346949,
+								"url": "https://www.npr.org/2025/01/23/nx-s1-5272701/karla-sofia-gascon-trans-actress-oscar-nomination-emilia-perez?utm_source=firefox-newtab-en-us",
+								"title": "Karla Sofía Gascón Is the First Openly Trans Actress to Receive an Oscar Nomination",
+								"excerpt": "The Spanish actress portrays the titular character in Emilia Pérez, a polarizing musical that focuses on the life of a transgender drug lord in Mexico.",
+								"publisher": "NPR",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/670c642a-ba2b-4b37-821e-c65c0d51e7e2.jpeg",
+								"recommendation_id": "43d87467-fb57-4f48-831d-63602bd5e49a",
+								"score": 1
+							},
+							{
+								"id": 7040771890812834,
+								"url": "https://www.smithsonianmag.com/smart-news/giant-mysterious-spires-ruled-the-earth-long-before-trees-did-what-exactly-are-these-odd-looking-fossils-13709647/?utm_source=firefox-newtab-en-us",
+								"title": "Giant, Mysterious Spires Ruled the Earth Long Before Trees Did. What Exactly Are These Odd-Looking Fossils?",
+								"excerpt": "For more than 150 years, scientists have debated whether Prototaxites—which stood roughly 24 feet tall and 3 feet wide—were an early lichen or fungus, like a “giant mushroom”",
+								"publisher": "Smithsonian Magazine",
+								"raw_image_src": "https://th-thumbnailer.cdn-si-edu.com/nK8MGH50K_je1A_8_ShVXMfQ4Kk=/fit-in/1200x0/filters:focal(492x255:493x256)/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler_public%2F5d%2F2c%2F5d2cdeb9-da34-48e0-acb7-2c729e1a1b5b%2Fprototaxites_01.jpg",
+								"recommendation_id": "224e87e8-1f4b-4fb6-bbeb-c26db17e4211",
+								"score": 1
+							},
+							{
+								"id": 3240978792873648,
+								"url": "https://www.bbc.com/future/article/20250121-the-physics-transforming-cancer?utm_source=firefox-newtab-en-us",
+								"title": "The Ultra-Fast Cancer Treatments Which Could Replace Conventional Radiotherapy",
+								"excerpt": "A pioneering new treatment promises to tackle a wider range of cancers, with fewer side-effects than conventional radiotherapy. It also takes less than a second.",
+								"publisher": "BBC",
+								"raw_image_src": "https://ichef.bbci.co.uk/images/ic/1920xn/p0kl5vy5.jpg.webp",
+								"recommendation_id": "e00b07cf-1713-4223-843c-ac239cb7e217",
+								"score": 1
+							},
+							{
+								"id": 6514208448757166,
+								"url": "https://www.wired.com/story/subaru-location-tracking-vulnerabilities/?utm_source=firefox-newtab-en-us",
+								"title": "Subaru Security Flaws Exposed Its System for Tracking Millions of Cars",
+								"excerpt": "Now-fixed web bugs allowed hackers to remotely unlock and start millions of Subarus. More disturbingly, they could also access at least a year of cars’ location histories—and Subaru employees still can.",
+								"publisher": "WIRED",
+								"raw_image_src": "https://media.wired.com/photos/679163ea81b10acbc3e4f33b/191:100/w_1280,c_limit/security_subaru_getty.jpg",
+								"recommendation_id": "792715e7-6b17-4799-90f0-20b9a6b00983",
+								"score": 1
+							},
+							{
+								"id": 1977735601043744,
+								"url": "https://www.mentalfloss.com/why-is-it-called-a-manila-envelope?utm_source=firefox-newtab-en-us",
+								"title": "Why Is It Called a “Manila” Envelope?",
+								"excerpt": "There’s a surprising connection between the capital of the Philippines and mailing important documents.",
+								"publisher": "Mental Floss",
+								"raw_image_src": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5040,h_2835,x_0,y_0/images/GettyImages/mmsport/mentalfloss/01jhgbpj44gk4ptbexds",
+								"recommendation_id": "d985bb0d-3112-4649-b8f4-282e1a8b403a",
+								"score": 1
+							},
+							{
+								"id": 3944414286816410,
+								"url": "https://getpocket.com/explore/item/an-american-tragedy-the-colorful-life-and-shocking-death-of-ovid-neal-iii?utm_source=firefox-newtab-en-us",
+								"title": "An American Tragedy: The Colorful Life and Shocking Death of Ovid Neal III",
+								"excerpt": "On the dark streets of a college town, two teenagers hoisted a rock and ended a man’s life. His loved ones want to know when we’ll finally value the lives of homeless people.",
+								"publisher": "Narratively",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/89d2902a-8f8b-475a-b3b1-f61d63407e74.jpeg",
+								"recommendation_id": "29602064-0942-4c4b-9217-e728233c408d",
+								"score": 1
+							},
+							{
+								"id": 5452275909656025,
+								"url": "https://www.nbcnews.com/news/world/trump-panama-canal-china-rubio-rcna188491?utm_source=firefox-newtab-en-us",
+								"title": "Trump Says China Controls the Panama Canal — but Here’s How It Really Works",
+								"excerpt": "Both China and Panama deny there is any interference in the running of the critical waterway, whose neutrality experts say has been vital to its success.",
+								"publisher": "NBC News",
+								"raw_image_src": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-01/250121-panama-canal-mb-1033-725ff8.jpg",
+								"recommendation_id": "9058660a-9887-4932-8708-f4a5a62b68ab",
+								"score": 1
+							},
+							{
+								"id": 7763142839811517,
+								"url": "https://www.npr.org/2025/01/21/nx-s1-5268949/jesse-eisenberg-a-real-pain?utm_source=firefox-newtab-en-us",
+								"title": "In ‘A Real Pain,’ Jesse Eisenberg Asks: What Is the Purpose of ‘Tragedy Tourism’?",
+								"excerpt": "Eisenberg’s film follows two cousins on a Jewish heritage tour of Poland, which includes a stop at the Majdanek death camp. The story draws on his own family history — and his struggle with OCD.",
+								"publisher": "NPR",
+								"raw_image_src": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1835x1032+41+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F04%2F3e%2Fd643093a430aa329785f38759253%2Fa-real-pain-006-arp-240206-js-g2-72746-00-38-04-19-still004.jpg",
+								"recommendation_id": "7e8432c7-33b3-4a66-984a-4c6b0323e1b5",
+								"score": 1
+							},
+							{
+								"id": 2870664171538254,
+								"url": "https://www.newstatesman.com/culture/books/2025/01/how-we-misread-the-great-gatsby?utm_source=firefox-newtab-en-us",
+								"title": "How We Misread ‘The Great Gatsby’",
+								"excerpt": "The greatness of F Scott Fitzgerald’s novel, published 100 years ago, lies in its details. But they are often overlooked, buried beneath a century of accumulated cliché.",
+								"publisher": "New Statesman",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bc301ae8-7c7e-4c3c-a310-686dfc867a74.jpeg",
+								"recommendation_id": "a752b982-3bab-41a9-a428-85c5077f452c",
+								"score": 1
+							},
+							{
+								"id": 6002501921572606,
+								"url": "https://getpocket.com/explore/item/the-american-missionary-and-the-uncontacted-tribe?utm_source=firefox-newtab-en-us",
+								"title": "The American Missionary and the Uncontacted Tribe",
+								"excerpt": "John Chau had ambitions for a great awakening. But what awaited instead was tragedy.",
+								"publisher": "GQ",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ff83bad5-8c99-49e0-9a76-09f39da3333b.jpeg",
+								"recommendation_id": "8866beb9-a025-4c11-b6da-eec8b754e742",
+								"score": 1
+							},
+							{
+								"id": 3353005719236817,
+								"url": "https://time.com/7209181/fossil-fuel-billionaires-wealth-trump-inauguration/?utm_source=firefox-newtab-en-us",
+								"title": "Fossil Fuel Billionaires Boost Wealth by $3 Billion After Trump’s Inauguration",
+								"excerpt": "One day after Trump’s inauguration, oil and gas billionaires see their total wealth boosted by more than $3 billion.",
+								"publisher": "Time",
+								"raw_image_src": "https://api.time.com/wp-content/uploads/2025/01/GettyImages-2194387867.jpg?quality=85&w=1024&h=628&crop=1",
+								"recommendation_id": "e3178173-7485-4ca3-b11c-1ccfd7ecf901",
+								"score": 1
+							},
+							{
+								"id": 193426415087215,
+								"url": "https://www.smithsonianmag.com/smart-news/you-can-buy-a-2500-year-old-corinthian-helmet-worn-by-a-warrior-in-ancient-greece-180985881/?utm_source=firefox-newtab-en-us",
+								"title": "You Can Buy a 2,500-Year-Old Corinthian Helmet Worn by a Warrior in Ancient Greece",
+								"excerpt": "Experts think the well-preserved bronze artifact was made between 500 and 450 B.C.E. It will be sold at auction on January 25",
+								"publisher": "Smithsonian Magazine",
+								"raw_image_src": "https://th-thumbnailer.cdn-si-edu.com/u72ltMOCHeI48MYKP4xgjFRxTYU=/fit-in/1200x0/filters:focal(667x1000:668x1001)/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler_public%2F99%2Fe4%2F99e4640f-796e-4f0a-8e37-660fde78a6fb%2Fhelmet.jpg",
+								"recommendation_id": "15e19bcb-82f5-402d-ba08-58f0f70d937a",
+								"score": 1
+							},
+							{
+								"id": 1036220752523283,
+								"url": "https://getpocket.com/explore/item/what-s-the-longest-novel-ever-published?utm_source=firefox-newtab-en-us",
+								"title": "What’s the Longest Novel Ever Published?",
+								"excerpt": "It clocks in at 1.3 million words and 9.6 million characters.",
+								"publisher": "Mental Floss",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/cd1533d5-9f7b-4111-ad64-26398f293dc4.jpeg",
+								"recommendation_id": "eee89853-16e2-44b0-94aa-d8d8c9f9d07b",
+								"score": 1
+							},
+							{
+								"id": 383155429897475,
+								"url": "https://getpocket.com/explore/item/what-s-better-for-cardio-fitness-one-long-walk-or-multiple-short-walks-a-day?utm_source=firefox-newtab-en-us",
+								"title": "What’s Better for Cardio Fitness: One Long Walk or Multiple Short Walks a Day?",
+								"excerpt": "Both have their benefits, but is one better than the other? Here’s everything you need to know.",
+								"publisher": "Stylist",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/1a986037-1bcd-444c-9035-5c966f0f00dc.jpeg",
+								"recommendation_id": "3bce6390-001c-4d8b-bd74-84963c5f8153",
+								"score": 1
+							},
+							{
+								"id": 1027210639661617,
+								"url": "https://www.travelandleisure.com/best-solo-travel-destinations-8775852?utm_source=firefox-newtab-en-us",
+								"title": "I’ve Traveled Alone to 65 Countries – Here Are My Top 5 Destinations for Flying Solo",
+								"excerpt": "Where to find adventure, group activities, affordable luxury hotels, and total relaxation as a solo traveler.",
+								"publisher": "Travel + Leisure",
+								"raw_image_src": "https://www.travelandleisure.com/thmb/um4uH3vd_X_BGyk7KmLBU9zSXMM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-us-montana-lone-mountain-ranch-SOLODEST0424-ed1740d9e5a14b6c83d0fc51930f787a.jpg",
+								"recommendation_id": "32eb0700-25be-4366-9d78-521613329307",
+								"score": 1
+							},
+							{
+								"id": 4362359644977463,
+								"url": "https://getpocket.com/explore/item/how-to-make-cacio-e-pepe-the-easiest-method-for-perfect-results-every-time?utm_source=firefox-newtab-en-us",
+								"title": "How To Make Cacio e Pepe",
+								"excerpt": "The easiest method for perfect results every time.",
+								"publisher": "The Kitchn",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/e4b2c771-dba6-4c5a-ac18-16410bf0667b.jpeg",
+								"recommendation_id": "38757c44-8b4b-4eec-b8e3-a928d9aedc84",
+								"score": 1
+							},
+							{
+								"id": 6270104679144492,
+								"url": "https://www.wired.com/story/the-us-has-bird-flu-vaccines-heres-why-you-cant-get-one/?utm_source=firefox-newtab-en-us",
+								"title": "The US Has Bird Flu Vaccines. Here’s Why You Can’t Get One",
+								"excerpt": "H5N1 vaccines have been previously licensed, and millions are in the national stockpile. But even with the news of the country’s first human death due to bird flu, vaccination isn’t yet recommended.",
+								"publisher": "WIRED",
+								"raw_image_src": "https://media.wired.com/photos/67854b30b8f5b6e673292544/191:100/w_1280,c_limit/GettyImages-642438634.jpg",
+								"recommendation_id": "22c55816-93d7-40a5-8990-0232f6d19916",
+								"score": 1
+							},
+							{
+								"id": 949069642772193,
+								"url": "https://www.cntraveler.com/gallery/golden-visas-americans-can-use-to-move-abroad?utm_source=firefox-newtab-en-us",
+								"title": "30 ‘Golden Visas’ Americans Can Use to Move Abroad",
+								"excerpt": "There’s been a surge in Americans applying to “golden visas” in Greece, Panama, Thailand, and beyond.",
+								"publisher": "Condé Nast Traveler",
+								"raw_image_src": "https://media.cntraveler.com/photos/6791693c8f30b9a14905901b/16:9/w_2580,c_limit/GettyImages-1197124451.jpg",
+								"recommendation_id": "de0a5f9f-ece6-4d5e-b70c-d21165134eb4",
+								"score": 1
+							},
+							{
+								"id": 7652715234940300,
+								"url": "https://getpocket.com/explore/item/the-world-s-oldest-pants-are-a-3-000-year-old-engineering-marvel?utm_source=firefox-newtab-en-us",
+								"title": "The World’s Oldest Pants Are a 3,000-Year-Old Engineering Marvel",
+								"excerpt": "Strong in some places and flexible in others, the pants were designed for horseback riding.",
+								"publisher": "Ars Technica",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/5c4bb49f-9ade-4213-a625-018b51a701e5.jpeg",
+								"recommendation_id": "5fc4a631-1fda-464c-9841-7f99855d79c5",
+								"score": 1
+							},
+							{
+								"id": 6504356553546274,
+								"url": "https://getpocket.com/explore/item/10-clever-ways-to-organize-tupperware-and-food-storage-containers?utm_source=firefox-newtab-en-us",
+								"title": "10 Clever Ways to Organize Tupperware and Food Storage Containers",
+								"excerpt": "Organizing your food storage containers pays off handsomely in the long run.",
+								"publisher": "Apartment Therapy",
+								"raw_image_src": "https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/893a444f-deae-4cc4-a9c5-9c65cc7ea8ce.jpeg",
+								"recommendation_id": "957cf690-2cee-4896-8df2-55651b3d44a5",
+								"score": 1
+							},
+							{
+								"id": 3698705209647437,
+								"url": "https://www.harpersbazaar.com/culture/features/a63496299/the-dispatch-pamela-anderson-gia-coppola-the-last-showgirl-interview/?utm_source=firefox-newtab-en-us",
+								"title": "Pamela Anderson and Gia Coppola Had a Date With Destiny",
+								"excerpt": "In the latest edition of The Dispatch, Derek C. Blasberg talks to the duo about how fate (and Coppola’s determination) brought them together for The Last Showgirl.",
+								"publisher": "Harper's Bazaar",
+								"raw_image_src": "https://hips.hearstapps.com/hmg-prod/images/hbz020125voicesblasberg-003-1-678fdb7c6db18.jpg?crop=1.00xw:0.376xh;0,0.302xh&resize=1200:*",
+								"recommendation_id": "797f9e17-2060-4731-b3bf-677d32abc834",
+								"score": 1
+							},
+							{
+								"id": 8833940598130110,
+								"url": "https://getpocket.com/explore/item/vitamin-deficiency-may-be-why-you-re-so-tired-a-nutritional-neuroscientist-explains-how-to-kickstart?utm_source=firefox-newtab-en-us",
+								"title": "Vitamin Deficiency May Be Why You’re So Tired",
+								"excerpt": "A nutritional neuroscientist explains how to kickstart your energy by getting essential nutrients, along with more sleep and exercise.",
+								"publisher": "The Conversation",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/aba709b9-2e20-4146-820e-6ed8e2ae5485.jpeg",
+								"recommendation_id": "9d99b74d-0f2e-43a9-9ab4-982ed59d1e0c",
+								"score": 1
+							},
+							{
+								"id": 7211942475884803,
+								"url": "https://getpocket.com/explore/item/the-adults-celebrating-child-free-lives?utm_source=firefox-newtab-en-us",
+								"title": "The Adults Celebrating Child-Free Lives",
+								"excerpt": "From consciously child-free influencers, to online communities for people who’ve decided against having kids, the no-kids movement is booming – but so is the backlash.",
+								"publisher": "BBC Worklife",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9cf72d1b-ff1e-41d9-8e41-f00a34d9081c.jpeg",
+								"recommendation_id": "86c929fc-7403-4d0b-876d-b123b4f3b33a",
+								"score": 1
+							}
+						],
+						"status": "success"
+					}
+				}
+			},
+			"loaded": true
+		},
+		"spocs": {
+			"spocs_endpoint": "https://spocs.getpocket.com/spocs",
+			"lastUpdated": 1737758412650,
+			"data": {
+				"settings": {
+					"feature_flags": {
+						"collections": false,
+						"spoc_v2": true
+					},
+					"spocsPerNewTabs": 1,
+					"domainAffinityParameterSets": {
+						"default": {
+							"combinedDomainFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"itemScoreFactor": 1,
+							"multiDomainBoost": 0,
+							"perfectCombinedDomainScore": 2,
+							"perfectFrequencyVisits": 10,
+							"recencyFactor": 0.5
+						},
+						"fully-personalized": {
+							"combinedDomainFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"itemScoreFactor": 0.01,
+							"multiDomainBoost": 0,
+							"perfectCombinedDomainScore": 2,
+							"perfectFrequencyVisits": 10,
+							"recencyFactor": 0.5
+						},
+						"fully-personalized-domains": {
+							"combinedDomainFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"itemScoreFactor": 0.01,
+							"multiDomainBoost": 0,
+							"perfectCombinedDomainScore": 10,
+							"perfectFrequencyVisits": 1,
+							"recencyFactor": 0.5
+						}
+					},
+					"timeSegments": [
+						{
+							"id": "week-1",
+							"startTime": 432000,
+							"endTime": 0,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-2",
+							"startTime": 864000,
+							"endTime": 432000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-3",
+							"startTime": 1296000,
+							"endTime": 864000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-4",
+							"startTime": 1728000,
+							"endTime": 1296000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-5",
+							"startTime": 2160000,
+							"endTime": 1728000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-6",
+							"startTime": 2592000,
+							"endTime": 2160000,
+							"weightPosition": 1
+						}
+					]
+				},
+				"spocs": {
+					"title": "",
+					"context": "",
+					"sponsor": "",
+					"personalized": true,
+					"items": [
+						{
+							"id": 740956530,
+							"flight_id": 720040728,
+							"campaign_id": 1283180,
+							"title": "If You Need to Kill Time on Your Computer, This Popular Strategy Game Is a Must",
+							"url": "https://play.forgeofempires.com/?ref=firefox_us_us_cpc&bid=tradeportwinterA&external_param=tradeportwinterA",
+							"domain": "play.forgeofempires.com",
+							"excerpt": "This game will keep you up at night. No download needed.",
+							"priority": 3,
+							"context": "Sponsored by Forge of Empires",
+							"raw_image_src": "https://s.zkcdn.net/Advertisers/04a08d5dc3c64fff8020afa7321cebe8.jpg",
+							"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2F04a08d5dc3c64fff8020afa7321cebe8.jpg&resize=w618-h310",
+							"shim": {
+								"impression": "1,eyJ2IjoiMS4xMiIsImF2Ijo1MzM5MDAsImF0IjozNjE3LCJidCI6MCwiY20iOjEyODMxODAsImNoIjozNjg0OCwiY2siOnt9LCJjciI6NTUwMTAzMjkwLCJkaSI6IjNiMzQyNzYzMDkwYjQ4OTNiN2E2YWY1YjI3NzQ3N2M2IiwiZGoiOjAsImlpIjoiMjQ0YmNkNDg3ZWZmNGJkODkzNDBlNzViOWFjY2QzMjciLCJkbSI6MywiZmMiOjc0MDk1NjUzMCwiZmwiOjcyMDA0MDcyOCwiaXAiOiIzNC4xMDUuNy4yNDciLCJrdyI6InVzLHVzLWxhIiwibWsiOiJ1cyIsIm53IjoxMDI1MCwicGMiOjAuOCwib3AiOjAuOCwibXAiOjAuOCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjIsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDE0ZjIzZGVhNTMyMmY3NWQiLCJzcCI6MjE0ODg4NCwic3QiOjEwNzAwOTgsInVrIjoiezEzMzE4MzhhLWIzMDYtNDRkNC1hYzc3LTU1YzQ5MjE3ZjIwZH0iLCJ6biI6MjE3NzU4LCJ0cyI6MTczNzc1ODQxMjU2MSwicG4iOiJzcG9jcyIsImdjIjp0cnVlLCJnQyI6dHJ1ZSwiZ3MiOiJub25lIiwiZGMiOjEsInR6IjoiVVRDIiwiYmEiOjEsImZxIjoxfQ,QksgtdAVZt2UF4yFhalou6O17iI",
+								"click": "0,eyJ2IjoiMS4xMiIsImF2Ijo1MzM5MDAsImF0IjozNjE3LCJidCI6MCwiY20iOjEyODMxODAsImNoIjozNjg0OCwiY2siOnt9LCJjciI6NTUwMTAzMjkwLCJkaSI6IjNiMzQyNzYzMDkwYjQ4OTNiN2E2YWY1YjI3NzQ3N2M2IiwiZGoiOjAsImlpIjoiMjQ0YmNkNDg3ZWZmNGJkODkzNDBlNzViOWFjY2QzMjciLCJkbSI6MywiZmMiOjc0MDk1NjUzMCwiZmwiOjcyMDA0MDcyOCwiaXAiOiIzNC4xMDUuNy4yNDciLCJrdyI6InVzLHVzLWxhIiwibWsiOiJ1cyIsIm53IjoxMDI1MCwicGMiOjAuOCwib3AiOjAuOCwibXAiOjAuOCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjIsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDE0ZjIzZGVhNTMyMmY3NWQiLCJzcCI6MjE0ODg4NCwic3QiOjEwNzAwOTgsInVrIjoiezEzMzE4MzhhLWIzMDYtNDRkNC1hYzc3LTU1YzQ5MjE3ZjIwZH0iLCJ6biI6MjE3NzU4LCJ0cyI6MTczNzc1ODQxMjU2MCwicG4iOiJzcG9jcyIsImdjIjp0cnVlLCJnQyI6dHJ1ZSwiZ3MiOiJub25lIiwiZGMiOjEsInR6IjoiVVRDIiwidXIiOm51bGx9,spQZpKuQSkjRoEGix6AHRoYM6qc",
+								"delete": "",
+								"save": ""
+							},
+							"parameter_set": "default",
+							"caps": {
+								"lifetime": 50,
+								"campaign": {
+									"count": 10,
+									"period": 86400
+								},
+								"flight": {
+									"count": 10,
+									"period": 86400
+								}
+							},
+							"domain_affinities": {},
+							"personalization_models": {
+								"arts_and_entertainment": 1,
+								"autos_and_vehicles": 1,
+								"beauty_and_fitness": 1,
+								"blogging_resources_and_services": 1,
+								"books_and_literature": 1,
+								"business_and_industrial": 1,
+								"computers_and_electronics": 1,
+								"finance": 1,
+								"food_and_drink": 1,
+								"games": 1,
+								"health": 1,
+								"hobbies_and_leisure": 1,
+								"home_and_garden": 1,
+								"internet_and_telecom": 1,
+								"jobs_and_education": 1,
+								"law_and_government": 1,
+								"online_communities": 1,
+								"people_and_society": 1,
+								"pets_and_animals": 1,
+								"real_estate": 1,
+								"reference": 1,
+								"science": 1,
+								"shopping": 1,
+								"sports": 1,
+								"travel": 1
+							},
+							"min_score": 0.1,
+							"item_score": 0.2,
+							"sponsor": "Forge of Empires",
+							"fetchTimestamp": 1737758412650,
+							"score": 1.889812365046136,
+							"scorableItem": {
+								"id": 740956530,
+								"item_tags": {
+									"arts_and_entertainment": 1,
+									"autos_and_vehicles": 1,
+									"beauty_and_fitness": 1,
+									"blogging_resources_and_services": 1,
+									"books_and_literature": 1,
+									"business_and_industrial": 1,
+									"computers_and_electronics": 1,
+									"finance": 1,
+									"food_and_drink": 1,
+									"games": 1,
+									"health": 1,
+									"hobbies_and_leisure": 1,
+									"home_and_garden": 1,
+									"internet_and_telecom": 1,
+									"jobs_and_education": 1,
+									"law_and_government": 1,
+									"online_communities": 1,
+									"people_and_society": 1,
+									"pets_and_animals": 1,
+									"real_estate": 1,
+									"reference": 1,
+									"science": 1,
+									"shopping": 1,
+									"sports": 1,
+									"travel": 1
+								},
+								"item_score": 0.2,
+								"item_sort_id": 1
+							},
+							"rankingVector": {
+								"final_features": {
+									"tag_sim": 1.889822365046136,
+									"item_sort_id": 1
+								},
+								"coeffs": {
+									"tag_sim": 1,
+									"item_sort_id": -0.00001
+								},
+								"score": 1.889812365046136
+							}
+						}
+					]
+				}
+			},
+			"loaded": true,
+			"frequency_caps": [],
+			"blocked": [],
+			"placements": [
+				{
+					"name": "sponsored-topsites",
+					"ad_types": [
+						3120
+					],
+					"zone_ids": [
+						280143
+					]
+				},
+				{
+					"name": "spocs",
+					"ad_types": [
+						3617
+					],
+					"zone_ids": [
+						217758,
+						217995
+					]
+				}
+			]
+		},
+		"experimentData": {
+			"utmSource": "pocket-newtab"
+		},
+		"recentSavesData": [],
+		"isUserLoggedIn": false,
+		"recentSavesEnabled": false,
+		"pocketButtonEnabled": true,
+		"saveToPocketCard": true,
+		"hideDescriptions": false,
+		"compactImages": false,
+		"imageGradient": false,
+		"newSponsoredLabel": false,
+		"titleLines": 3,
+		"descLines": 3,
+		"readTime": true
+	},
+	"Search": {
+		"fakeFocus": false,
+		"hide": false
+	},
+	"Wallpapers": {
+		"wallpaperList": [],
+		"highlightSeenCounter": {
+			"value": 0
+		},
+		"categories": []
+	},
+	"Weather": {
+		"initialized": false,
+		"lastUpdated": null,
+		"query": "",
+		"suggestions": [],
+		"locationData": {
+			"city": "",
+			"adminArea": "",
+			"country": ""
+		},
+		"searchActive": false,
+		"locationSearchString": "",
+		"suggestedLocations": []
+	}
+};
+
+��e/�           g�Gˎ?����       :about:home alt-data 1;88262,script version 20240704121409  �r
