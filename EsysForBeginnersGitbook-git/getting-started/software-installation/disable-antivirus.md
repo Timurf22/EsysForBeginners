@@ -6,7 +6,7 @@ How to disable windows defender :&#x20;
 
 First, open the windows security app through the windows button :&#x20;
 
-<figure><img src="../../.gitbook/assets/{F20AA564-D952-489B-8FE7-93B135908742}.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/user-attachments/assets/9aa76113-fb6d-48ce-8c6b-f75b425e4409" alt=""><figcaption></figcaption></figure>
 
 Next, navigate to the virus and threat protection window, then click manage settings :
 
