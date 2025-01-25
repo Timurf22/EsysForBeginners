@@ -142,3 +142,18 @@
   "_resolved": "https://registry.npmjs.org/gitbook/-/gitbook-3.2.3.tgz",
   "_from": "gitbook@3.2.3"
 }
+{
+  "name": "EsysForBeginners",
+  "version": "1.0.0",
+  "description": "An easy way to learn Esys for BMW F and G series vehicles",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "author": "Timur Bolukbas",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
